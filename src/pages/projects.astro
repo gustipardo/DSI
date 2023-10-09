@@ -1,0 +1,30 @@
+---
+import Navigation from '../components/Navigation.astro'
+import Project from '../components/Project.astro'
+
+const allPosts = await Astro.glob("../pages/projects/*.md");
+---
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" />
+    <title>DSI Constructora</title>
+
+</head>
+<body>
+    <Navigation/>
+    <ul>
+        {allPosts.map((post) => <Project 
+        title={post.title} 
+        location="asd"
+        image=""
+        />)}
+    </ul>
+</body>
+</html>
+
+
+
