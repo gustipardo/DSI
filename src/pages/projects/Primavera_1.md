@@ -1,7 +1,7 @@
 ---
 title: 'Plaza: juegos, mastil y mesas'
 description: 'Primavera_1'
-imagenes: 
+imagenes: 'estudio.jpeg'
 ---
 
 Esta entrada 

@@ -22,7 +22,7 @@ const { frontmatter } = Astro.props;
         {allPosts.map((post) => <Project 
         title={post.frontmatter.title}
         description={post.frontmatter.description}
-        image=""
+        image={post.frontmatter.imagenes}
         />)}
     </ul>
 
