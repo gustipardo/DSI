@@ -1,8 +1,9 @@
 ---
 import Navigation from '../components/Navigation.astro'
 import Card from '../components/Card.astro'
-const ImageName = "map.jpg"; // Nombre de la imagen
-const ImageFolder = "assets/" + ImageName; // Ruta en Firebase Storage
+
+const ImageName = "map.jpg";
+const ImageFolder = "assets/" + ImageName;
 const URL = `https://firebasestorage.googleapis.com/v0/b/dsi-constructora.appspot.com/o/${encodeURIComponent(ImageFolder)}?alt=media`;
 ---
 
@@ -39,8 +40,8 @@ const URL = `https://firebasestorage.googleapis.com/v0/b/dsi-constructora.appspo
         <div class="bg-white text-black py-8 mx-2 border-b-4 border-black">
             <h2 class="text-3xl font-bold">Nuestros Servicios</h2>
             <p class="text-lg mt-4">Somos una Empresa Constructora especializada en trabajos topográficos y la construcción de grandes estructuras como edificios, galpones, etc.</p>
-            <Card title="TRABAJOS TOPOGRÁFICOS" image="../../public/services/topo.svg" services={["Relevamientos plani-altimétricos.", "Estudio de Cuencas Hídricas.", "Cálculo y Ejecución de Mov. De Suelo.", "Acondicionamiento de Suelos para Grandes Estructuras."]} />
-            <Card title="CONSTRUCCIÓN DE GRANDES ESTRUCTURAS" image="../../public/services/grua.svg" services={["Fundaciones de Hormigón Armado.", "Estructuras Metálicas y de Hormigón.", "Mampostería, cerramientos.", "Construcción en seco.", "Pintura y revestimientos.", "Instalaciones Sanitarias, Eléctricas, Redes de datos, Refrigeración, detección y Extinción de Incendios."]} />
+            <Card title="TRABAJOS TOPOGRÁFICOS" image="https://firebasestorage.googleapis.com/v0/b/dsi-constructora.appspot.com/o/services%2Fgrua.svg?alt=media&token=1175a780-b800-4959-8c91-87fa5da4eca6" services={["Relevamientos plani-altimétricos.", "Estudio de Cuencas Hídricas.", "Cálculo y Ejecución de Mov. De Suelo.", "Acondicionamiento de Suelos para Grandes Estructuras."]} />
+            <Card title="CONSTRUCCIÓN DE GRANDES ESTRUCTURAS" image="https://firebasestorage.googleapis.com/v0/b/dsi-constructora.appspot.com/o/services%2Ftopo.svg?alt=media&token=231b734e-3e8f-4230-9597-b1cddd00f0c7" services={["Fundaciones de Hormigón Armado.", "Estructuras Metálicas y de Hormigón.", "Mampostería, cerramientos.", "Construcción en seco.", "Pintura y revestimientos.", "Instalaciones Sanitarias, Eléctricas, Redes de datos, Refrigeración, detección y Extinción de Incendios."]} />
         </div>
     </section>
 
@@ -64,9 +65,7 @@ const URL = `https://firebasestorage.googleapis.com/v0/b/dsi-constructora.appspo
             <a href="https://twitter.com/DSIconstructora" class="text-blue-500 hover:underline">Twitter</a>
           </div>
         </div>
-        <img src="https://firebasestorage.googleapis.com/v0/b/dsi-constructora.appspot.com/o/assets%2Fmap.jpg?alt=media&token=38f106de-35da-40c2-8f22-22ec7105bcaa
-        "/>
-        <img src={URL}/>
+        <img src="https://firebasestorage.googleapis.com/v0/b/dsi-constructora.appspot.com/o/assets%2Fmap.jpg?alt=media&token=38f106de-35da-40c2-8f22-22ec7105bcaa"/>
       </section>
 </body>
 </html>
