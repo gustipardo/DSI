@@ -1,6 +1,9 @@
 ---
 import Navigation from '../components/Navigation.astro'
 import Card from '../components/Card.astro'
+const ImageName = "map.jpg"; // Nombre de la imagen
+const ImageFolder = "assets/" + ImageName; // Ruta en Firebase Storage
+const URL = `https://firebasestorage.googleapis.com/v0/b/dsi-constructora.appspot.com/o/${encodeURIComponent(ImageFolder)}?alt=media`;
 ---
 
 <html lang="en">
@@ -13,7 +16,7 @@ import Card from '../components/Card.astro'
     <style>
 
         .bg-image {
-            background-image: url('../../public/grua.jpg'); 
+            background-image: url('../../public/assets/grua.jpg'); 
             background-size: cover;
             background-position: center;
             height: 100vh; 
@@ -61,7 +64,9 @@ import Card from '../components/Card.astro'
             <a href="https://twitter.com/DSIconstructora" class="text-blue-500 hover:underline">Twitter</a>
           </div>
         </div>
-        <img src="../../public/map.jpg"/>
+        <img src="https://firebasestorage.googleapis.com/v0/b/dsi-constructora.appspot.com/o/assets%2Fmap.jpg?alt=media&token=38f106de-35da-40c2-8f22-22ec7105bcaa
+        "/>
+        <img src={URL}/>
       </section>
 </body>
 </html>
