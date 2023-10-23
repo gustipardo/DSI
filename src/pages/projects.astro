@@ -1,14 +1,11 @@
 ---
 import Layout from '../Layout/Layout.astro';
-import Navigation from '../components/Navigation.astro'
 import Project from '../components/Project.astro'
 
 const allPosts = await Astro.glob("../pages/projects/*.md");
 ---
 
 <Layout title='DSI Constructora'>
-    <img src="../../public/assets/logo.svg" class="h-16 mr-3" alt="DSI Logo" transition:name="logo"/>
-
     <ul>
         {allPosts.map((post) => <Project
         url={post.url}
