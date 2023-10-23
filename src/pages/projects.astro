@@ -1,21 +1,14 @@
 ---
+import Layout from '../Layout/Layout.astro';
 import Navigation from '../components/Navigation.astro'
 import Project from '../components/Project.astro'
 
 const allPosts = await Astro.glob("../pages/projects/*.md");
 ---
 
-<html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" />
-    <title>DSI Constructora</title>
+<Layout title='DSI Constructora'>
+    <img src="../../public/assets/logo.svg" class="h-16 mr-3" alt="DSI Logo" transition:name="logo"/>
 
-</head>
-<body>
-    <Navigation/>
     <ul>
         {allPosts.map((post) => <Project
         url={post.url}
@@ -24,9 +17,6 @@ const allPosts = await Astro.glob("../pages/projects/*.md");
         image={post.frontmatter.imagenes}
         />)}
     </ul>
-
-</body>
-</html>
-
+</Layout>
 
 
