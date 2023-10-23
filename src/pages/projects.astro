@@ -6,13 +6,14 @@ const allPosts = await Astro.glob("../pages/projects/*.md");
 ---
 
 <Layout title='DSI Constructora'>
+
     <ul>
         {allPosts.map((post) => <Project
         url={post.url}
         title={post.frontmatter.title}
         description={post.frontmatter.description}
         image={post.frontmatter.imagenes}
-        />)}
+        name={post.frontmatter.name}/>)}
     </ul>
 </Layout>
 
