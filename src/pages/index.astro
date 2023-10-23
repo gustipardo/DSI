@@ -1,40 +1,18 @@
 ---
-import Navigation from '../components/Navigation.astro'
 import Card from '../components/Card.astro'
-
-const ImageName = "map.jpg";
-const ImageFolder = "assets/" + ImageName;
-const URL = `https://firebasestorage.googleapis.com/v0/b/dsi-constructora.appspot.com/o/${encodeURIComponent(ImageFolder)}?alt=media`;
+import Layout from '../Layout/Layout.astro'
 ---
-
-<html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" />
-    <title>DSI Constructora</title>
-    <style>
-
-        .bg-image {
-            background-image: url('../../public/assets/grua.jpg'); 
-            background-size: cover;
-            background-position: center;
-            height: 100vh; 
-        }
-    </style>
-</head>
-<body>
-    <Navigation/>
+<Layout title='DSI Constructora'>
     <section id="nosotros">
-        <div class="bg-image bg-no-repeat">
+        <div class="bg-image bg-no-repeat" 
+
+        style="background-image: url('../../public/assets/grua.jpg'); background-size: cover; background-position: center;height: 100vh;">
             <div class="text-white text-center pt-32">
                 <h1 class="text-4xl font-bold">Somos Una Empresa Constructora</h1>
                 <p class="text-xl mt-4">Especializada en trabajos topográficos y la construcción de grandes estructuras como edificios, galpones, etc.</p>
             </div>
         </div>
     </section>
-
     <section id="servicios">
      
         <div class="bg-white text-black py-8 mx-2 border-b-4 border-black">
@@ -68,9 +46,7 @@ const URL = `https://firebasestorage.googleapis.com/v0/b/dsi-constructora.appspo
         <img src="https://firebasestorage.googleapis.com/v0/b/dsi-constructora.appspot.com/o/assets%2Fmap.jpg?alt=media&token=38f106de-35da-40c2-8f22-22ec7105bcaa"/>
       </div>
     </section>
-    
-</body>
-</html>
 
+</Layout>
 
 

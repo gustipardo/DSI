@@ -17,7 +17,8 @@ const allPosts = await Astro.glob("../pages/projects/*.md");
 <body>
     <Navigation/>
     <ul>
-        {allPosts.map((post) => <Project 
+        {allPosts.map((post) => <Project
+        url={post.url}
         title={post.frontmatter.title}
         description={post.frontmatter.description}
         image={post.frontmatter.imagenes}
