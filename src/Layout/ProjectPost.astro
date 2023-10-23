@@ -6,7 +6,18 @@ interface Props {
     title: string;
 }
 const { title } = Astro.props;
+const allPosts = await Astro.glob("../pages/projects/*.md");
+const currentPath = Astro.url.pathname;
 
+
+
+const currentProject = allPosts.find(post => post.url === currentPath);
+
+const imagenes = currentProject?.frontmatter.imagenes;
+const name = currentProject?.frontmatter.name;
+
+console.log("Imágenes:", imagenes);
+console.log("Nombre:", name);
 ---
 
 <html lang="en">
@@ -20,9 +31,9 @@ const { title } = Astro.props;
 </head>
 <body>
     <Navigation/>
-    <img src="https://firebasestorage.googleapis.com/v0/b/dsi-constructora.appspot.com/o/projects%2FBarrio_Walsh.jpeg?alt=media&token=b8037e05-b5ab-4017-a12b-5c9d039679ba"
+    <img src=`https://firebasestorage.googleapis.com/v0/b/dsi-constructora.appspot.com/o/projects%2F${imagenes}?alt=media&token=b8037e05-b5ab-4017-a12b-5c9d039679ba`
     alt="Markdown Monster icon"
-    style="float: left; height: 200px" transition:name="hola"/>
+    style="float: left; height: 200px" transition:name={name}/>
     <slot/>
 </body>
 </html>
