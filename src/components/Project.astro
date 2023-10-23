@@ -1,5 +1,5 @@
 ---
-const { title, location, image} = Astro.props
+const { title, description, image} = Astro.props
 ---
 
 
@@ -8,7 +8,7 @@ const { title, location, image} = Astro.props
     <div class="px-6 py-4">
       <div class="font-bold text-xl mb-2">{title}</div>
       <p class="text-gray-700 text-base">
-        {location}
+        {description }
       </p>
     </div>
   </div>

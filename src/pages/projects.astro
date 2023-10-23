@@ -3,6 +3,8 @@ import Navigation from '../components/Navigation.astro'
 import Project from '../components/Project.astro'
 
 const allPosts = await Astro.glob("../pages/projects/*.md");
+
+const { frontmatter } = Astro.props;
 ---
 
 <html lang="en">
@@ -18,11 +20,12 @@ const allPosts = await Astro.glob("../pages/projects/*.md");
     <Navigation/>
     <ul>
         {allPosts.map((post) => <Project 
-        title={post.title} 
-        location="asd"
+        title={post.frontmatter.title}
+        description={post.frontmatter.description}
         image=""
         />)}
     </ul>
+
 </body>
 </html>
 
