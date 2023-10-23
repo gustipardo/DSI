@@ -11,33 +11,58 @@ import Card from '../components/Card.astro'
     <meta name="generator" />
     <title>DSI Constructora</title>
     <style>
-        /* Estilos para la imagen de fondo */
+
         .bg-image {
-            background-image: url('../../public/grua.jpg'); /* Reemplaza 'ruta/a/la/imagen.jpg' con la ruta de tu imagen */
+            background-image: url('../../public/grua.jpg'); 
             background-size: cover;
             background-position: center;
-            height: 100vh; /* Esto establecerá la altura de la imagen al 100% de la ventana gráfica */
+            height: 100vh; 
         }
     </style>
 </head>
 <body>
     <Navigation/>
-    <div class="bg-image bg-no-repeat">
-        <div class="text-white text-center pt-32">
-            <h1 class="text-4xl font-bold">Somos Una Empresa Constructora</h1>
-            <p class="text-xl mt-4">Especializada en trabajos topográficos y la construcción de grandes estructuras como edificios, galpones, etc.</p>
+    <section id="nosotros">
+        <div class="bg-image bg-no-repeat">
+            <div class="text-white text-center pt-32">
+                <h1 class="text-4xl font-bold">Somos Una Empresa Constructora</h1>
+                <p class="text-xl mt-4">Especializada en trabajos topográficos y la construcción de grandes estructuras como edificios, galpones, etc.</p>
+            </div>
         </div>
-    </div>
-    
-    <!-- Sección de "Nuestros Servicios" debajo de la imagen -->
-    <div class="bg-white text-black py-8 mx-2 border-b-4 border-black">
-		<h2 class="text-3xl font-bold">Nuestros Servicios</h2>
-		<p class="text-lg mt-4">Somos una Empresa Constructora especializada en trabajos topográficos y la construcción de grandes estructuras como edificios, galpones, etc.</p>
-		<Card title="TRABAJOS TOPOGRÁFICOS" image="../../public/services/topo.svg" services={["Relevamientos plani-altimétricos.", "Estudio de Cuencas Hídricas.", "Cálculo y Ejecución de Mov. De Suelo.", "Acondicionamiento de Suelos para Grandes Estructuras."]} />
-		<Card title="CONSTRUCCIÓN DE GRANDES ESTRUCTURAS" image="../../public/services/grua.svg" services={["Fundaciones de Hormigón Armado.", "Estructuras Metálicas y de Hormigón.", "Mampostería, cerramientos.", "Construcción en seco.", "Pintura y revestimientos.", "Instalaciones Sanitarias, Eléctricas, Redes de datos, Refrigeración, detección y Extinción de Incendios."]} />
-	</div>
+    </section>
 
-	
+    <section id="servicios">
+     
+        <div class="bg-white text-black py-8 mx-2 border-b-4 border-black">
+            <h2 class="text-3xl font-bold">Nuestros Servicios</h2>
+            <p class="text-lg mt-4">Somos una Empresa Constructora especializada en trabajos topográficos y la construcción de grandes estructuras como edificios, galpones, etc.</p>
+            <Card title="TRABAJOS TOPOGRÁFICOS" image="../../public/services/topo.svg" services={["Relevamientos plani-altimétricos.", "Estudio de Cuencas Hídricas.", "Cálculo y Ejecución de Mov. De Suelo.", "Acondicionamiento de Suelos para Grandes Estructuras."]} />
+            <Card title="CONSTRUCCIÓN DE GRANDES ESTRUCTURAS" image="../../public/services/grua.svg" services={["Fundaciones de Hormigón Armado.", "Estructuras Metálicas y de Hormigón.", "Mampostería, cerramientos.", "Construcción en seco.", "Pintura y revestimientos.", "Instalaciones Sanitarias, Eléctricas, Redes de datos, Refrigeración, detección y Extinción de Incendios."]} />
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2 class="text-3xl font-bold">CONTACTO</h2>
+        <div class="mt-4">
+          <p class="mb-2">Martín de Gainza 801</p>
+          <p class="mb-2">Edificio Panorama Offices 2</p>
+          <p class="mb-2">Unidad Funcional 94, Piso 4to</p>
+          <p class="mb-2">Parque Industrial Buen Ayre, Moreno</p>
+        </div>
+        <div class="mt-4">
+          <p class="mb-2">EMAIL: info@dsiconstructora.com</p>
+          <p class="mb-2">TELÉFONO: 11-53078516</p>
+        </div>
+      
+        <div class="mt-4">
+          <h3 class="text-xl font-bold">SÍGUENOS</h3>
+          <div class="mt-2">
+            <a href="https://www.instagram.com/dsiconstructora/" class="text-blue-500 hover:underline mr-4">Instagram</a>
+            <a href="https://twitter.com/DSIconstructora" class="text-blue-500 hover:underline">Twitter</a>
+          </div>
+        </div>
+        <img src="../../public/map.jpg"/>
+      </section>
 </body>
 </html>
 
