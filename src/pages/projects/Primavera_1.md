@@ -2,6 +2,7 @@
 title: 'Plaza: juegos, mastil y mesas'
 description: 'Ubicado en: '
 imagenes: 'primavera1_1.jpeg'
+order: 5
 ---
 
 Esta entrada 
