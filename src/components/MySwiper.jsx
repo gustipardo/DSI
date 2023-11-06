@@ -1,8 +1,8 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper.min.css';
 
-export default function ImageSlider({ props }) {
-    console.log(props)
+export default function ImageSlider({ props, name }) {
+    console.log(name)
   return (
     <Swiper
       spaceBetween={50}
@@ -12,7 +12,7 @@ export default function ImageSlider({ props }) {
     >
       {props.map((image, index) => (
         <SwiperSlide key={index}>
-         <img src={`../../public/projects/Barrio_Walsh/${image}`} alt={`Image ${index + 1}`} />
+        <img src={`../../public/projects/${name}/${image}`} alt={`Image ${index + 1}`} />
         </SwiperSlide>
 
       ))}
