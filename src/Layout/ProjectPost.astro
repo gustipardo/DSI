@@ -31,7 +31,7 @@ console.log("Nombre:", name);
 </head>
 <body>
     <Navigation/>
-    <img src=`https://firebasestorage.googleapis.com/v0/b/dsi-constructora.appspot.com/o/projects%2F${imagenes}?alt=media&token=b8037e05-b5ab-4017-a12b-5c9d039679ba`
+    <img src=`.././public/projects/${name}/${imagenes}`
     alt={name}
     style="float: left; height: 200px" transition:name={name}/>
     <slot/>
