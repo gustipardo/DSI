@@ -2,7 +2,6 @@
 import Navigation from '../components/Navigation.astro'
 import { ViewTransitions } from 'astro:transitions';
 import '../styles/global.css'
-import ImageSlider from '../components/ImageSlider.astro';
 import MySwiper from '../components/MySwiper';
 interface Props {
     title: string;
@@ -10,7 +9,7 @@ interface Props {
 const { title } = Astro.props;
 const allPosts = await Astro.glob("../pages/projects/*.md");
 const currentPath = Astro.url.pathname;
-
+    
 
 
 const currentProject = allPosts.find(post => post.url === currentPath);
@@ -36,19 +35,11 @@ console.log("Nombre:", name);
 </head>
 <body>
     <Navigation/>
-    <h1 class="text-5xl font-extrabold dark:text-white" style="text-align: center; color: black; font-weight: bold;">{ ProjectTitle }</h1>
-
-    <slot/>
     <div style="padding: 20px">
-    <img src=`.././public/projects/${name}/${imagenes}`
-    alt={name}
-    style="float: left;" transition:name={name}/>
-    
-<div>
-    <h2>Slider:</h2>
-    <ImageSlider name={name} client:load></ImageSlider>
-    <MySwiper name="asda" client:load />
-</div>
-</div>
+        <h1 class="text-5xl font-extrabold dark:text-white" style="text-align: center; color: black; font-weight: bold;">{ ProjectTitle }</h1>
+
+        <slot/>
+        <MySwiper props={imagenes2} client:load/>
+    </div>
 </body>
 </html>
