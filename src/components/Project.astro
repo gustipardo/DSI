@@ -7,7 +7,7 @@ const { url, title, description, image, name} = Astro.props
 
 <a class="block outline-none" href={url}>
   <div class="max-w-sm rounded overflow-hidden shadow-lg">
-      <img class="w-full" src=`https://firebasestorage.googleapis.com/v0/b/dsi-constructora.appspot.com/o/projects%2F${image}?alt=media&token=1804f088-1935-4029-9efe-a725e1c98211` transition:name={name};>
+      <img class="w-full" src=`../../projects/${name}/${image}` transition:name={name};>
       <div class="px-6 py-4">
         <div class="font-bold text-xl mb-2">{title}</div>
         <p class="text-gray-700 text-base">
