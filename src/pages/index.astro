@@ -2,19 +2,21 @@
 import Card from '../components/Card.astro'
 import Layout from '../Layout/Layout.astro'
 const numeroAleatorio = Math.floor(Math.random() * 3) + 1;
+console.log(numeroAleatorio)
 ---
 <Layout title='DSI Constructora'>
 
 
     <section id="nosotros">
-        <div class="bg-image bg-no-repeat" 
+      <div class="bg-image bg-no-repeat"
+     style=`background-image: url('../../assets/Front-page/${numeroAleatorio}.jpg'); background-size: cover; background-position: center; height: 100vh;`>
 
-        style=`background-image: url('https://firebasestorage.googleapis.com/v0/b/dsi-constructora.appspot.com/o/assets%2Fgrua${numeroAleatorio}.jpg?alt=media&token=c0b0493a-6da8-4470-9ba6-69836ab1848d'); background-size: cover; background-position: center;height: 100vh;`>
-            <div class="text-white text-center pt-32">
-                <h1 class="text-4xl font-bold">Somos Una Empresa Constructora</h1>
-                <p class="text-xl mt-4">Especializada en trabajos topográficos y la construcción de grandes estructuras</p>
-            </div>
-        </div>
+ 
+     <div class="text-white text-center pt-32">
+      <h1 class="text-4xl font-bold" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);">Somos Una Empresa Constructora</h1>
+      <p class="text-xl mt-4" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);">Especializada en trabajos topográficos y la construcción de grandes estructuras</p>
+  </div>
+  
     </section>
     <section id="servicios">
      
