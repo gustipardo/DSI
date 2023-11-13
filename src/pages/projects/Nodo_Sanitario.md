@@ -1,6 +1,6 @@
 ---
 title: 'Nodo Sanitario'
-description: 'Ubicado en Navarro'
+ubicacion: 'Navarro'
 imagenes: 'estudio.jpeg'
 order: 7
 layout: '../../Layout/ProjectPost.astro'

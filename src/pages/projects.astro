@@ -6,14 +6,14 @@ const allPosts = await Astro.glob("../pages/projects/*.md");
 ---
 
 <Layout title='DSI Constructora'>
-    <ul>
+    <div class="flex flex-wrap justify-around">
         {allPosts.map((post) => <Project
         url={post.url}
         title={post.frontmatter.title}
-        description={post.frontmatter.description}
+        ubicacion={post.frontmatter.ubicacion}
         image={post.frontmatter.imagenes}
         name={post.frontmatter.name}/>)}
-    </ul>
+    </div>
 </Layout>
 
 

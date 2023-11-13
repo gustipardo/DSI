@@ -1,6 +1,6 @@
 ---
 title: 'Plaza: juegos, mastil y mesas'
-description: 'Ubicado en: '
+ubicacion: '...'
 imagenes: 'primavera1_1.jpeg'
 imagenes2: ['primavera1_1.jpeg']
 order: 5

@@ -1,6 +1,6 @@
 ---
 title: 'Edificio de Oficinas Polo Este'
-description: 'Moron'
+ubicacion: 'Moron'
 imagenes: 'Edificio_de_Oficinas_Polo_Este.jpg'
 imagenes2: ['Edificio_de_Oficinas_Polo_Este.jpg']
 order: 2

@@ -1,6 +1,6 @@
 ---
 title: 'Terminación de 77 viviendas'
-description: 'Santos Vega'
+ubicacion: 'Santos Vega'
 imagenes: 'santosvega.gif'
 imagenes2: ['santosvega.gif']
 order: 6

@@ -1,10 +1,10 @@
 ---
 title: 'Barrio Walsh'
-description: 'González Catán'
+ubicacion: 'González Catán'
 imagenes: 'Barrio_Walsh.jpeg'
 imagenes2: ['Barrio_Walsh.jpeg','Barrio_Walsh2.jpg','Barrio_Walsh3.jpg']
 order: 1
 layout: '../../Layout/ProjectPost.astro'
 name: 'Barrio_Walsh'
 ---
-Ubicado en:
+Construccion y reparacion de viviendas.

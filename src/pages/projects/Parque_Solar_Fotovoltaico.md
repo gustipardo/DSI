@@ -1,6 +1,6 @@
 ---
 title: 'Parque Solar Fotovoltaico'
-description: 'Ubicado en el Dorado'
+ubicacion: 'El Dorado'
 imagenes: 'parque_solar_fotovoltaico.jpg'
 imagenes2: ['parque_solar_fotovoltaico.jpg']
 order: 4

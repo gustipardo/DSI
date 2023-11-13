@@ -36,7 +36,7 @@ console.log("Nombre:", name);
 <body>
     <Navigation/>
     <div style="padding: 20px">
-        <h1 class="text-5xl font-extrabold dark:text-white" style="text-align: center; color: black; font-weight: bold;">{ ProjectTitle }</h1>
+        <h1 class="text-5xl font-extrabold dark:text-white" style="text-align: center; color: black; font-weight: bold;" transition:name={name}>{ ProjectTitle }</h1>
         <slot/>
         <MySwiper props={imagenes2} client:load/>
     </div>

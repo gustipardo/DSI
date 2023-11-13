@@ -1,6 +1,6 @@
 ---
 title: 'Soldado Argentino'
-description: 'Ituzaingó'
+ubicacion: 'Ituzaingó'
 imagenes: 'Soldado_Argentino.jpg'
 imagenes2: ['Soldado_Argentino.jpg']
 order: 3
