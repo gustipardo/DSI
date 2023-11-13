@@ -1,6 +1,5 @@
 ---
-const { url, title, ubicacion, image, name} = Astro.props
-console.log(ubicacion)
+const { url, title, ubication, image, name} = Astro.props
 ---
 
 
@@ -10,7 +9,7 @@ console.log(ubicacion)
   <div class="max-w-sm overflow-hidden shadow-lg border border-gray-400 bg-white flex flex-col justify-between leading-normal rounded-2xl mb-4">    <div class="px-6 py-4 bg-slate-100 ">
       <h1 class="font-bold text-2xl" transition:name={name}>{title}</h1>
       <p class="text-gray-700 text-base">
-        {ubicacion}
+        {ubication}
       </p>
     </div>  
     <img class="w-full  rounded-none border-b  border-t border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r flex flex-col justify-between leading-normal" src=`../../projects/${name}/${image}` transition:name={name};>

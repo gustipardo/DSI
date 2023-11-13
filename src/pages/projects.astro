@@ -3,6 +3,8 @@ import Layout from '../Layout/Layout.astro';
 import Project from '../components/Project.astro'
 
 const allPosts = await Astro.glob("../pages/projects/*.md");
+console.log(allPosts)
+
 ---
 
 <Layout title='DSI Constructora'>
@@ -10,8 +12,8 @@ const allPosts = await Astro.glob("../pages/projects/*.md");
         {allPosts.map((post) => <Project
         url={post.url}
         title={post.frontmatter.title}
-        ubicacion={post.frontmatter.ubicacion}
-        image={post.frontmatter.imagenes}
+        ubication={post.frontmatter.ubicacion}
+        image={post.frontmatter.imagenes[0]}
         name={post.frontmatter.name}/>)}
     </div>
 </Layout>

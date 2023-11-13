@@ -15,13 +15,13 @@ const currentPath = Astro.url.pathname;
 const currentProject = allPosts.find(post => post.url === currentPath);
 
 const imagenes = currentProject?.frontmatter.imagenes;
-const imagenes2 = currentProject?.frontmatter.imagenes2;
+const project = currentProject;
 const name = currentProject?.frontmatter.name;
 const ProjectTitle = currentProject?.frontmatter.title;
 
-console.log(imagenes2)
+
 console.log("Imágenes:", imagenes);
-console.log("Nombre:", name);
+console.log("Nombre:", project);
 ---
 
 <html lang="en">
@@ -36,9 +36,9 @@ console.log("Nombre:", name);
 <body>
     <Navigation/>
     <div style="padding: 20px">
-        <h1 class="text-5xl font-extrabold dark:text-white" style="text-align: center; color: black; font-weight: bold;" transition:name={name}>{ ProjectTitle }</h1>
+        <h1 class="text-5xl font-extrabold dark:text-white" style="text-align: center; color: black; font-weight: bold;">{ ProjectTitle }</h1>
         <slot/>
-        <MySwiper props={imagenes2} client:load/>
+        <MySwiper props={project} client:load/>
     </div>
 </body>
 </html>
