@@ -39,7 +39,7 @@ console.log("Nombre:", project);
     <div style="padding: 20px">
         <h1 class="text-5xl font-extrabold dark:text-white" style="text-align: center; color: black; font-weight: bold;">{ ProjectTitle }</h1>
         <slot/>
-        <MySwiper props={project} client:load/>
+        {project && <MySwiper props={project} client:load/>}
     </div>
 </body>
 </html>
