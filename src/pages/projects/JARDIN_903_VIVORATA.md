@@ -8,14 +8,17 @@ name: 'JARDIN_903_VIVORATA'
 ---
 
 **Obra en ejecución**
+Avanzada JARDIN 903 VIVORATÁ
+Ubicación: Calle El Campamento entre Los Naranjos y La Armonía.
+Superficie: 510.04 m2 cubiertos, 241.71 m2 semicubiertos.
 
-Construccion y reparacion de viviendas ubicadas en Gonzalez Catán.
-
-### Realizado:
-+ Reparacion de tejado
-+ Pintado
-+ Instalacion Electrica
-+ Instalacion Fluvial
-
-# asdasdsd
-
+Distribución:
+- 3 aulas
+- Salón de usos múltiples
+- Comedor y cocina
+- Área administrativa y de apoyo    
+Estructura:
+Construcción tradicional racionalizada:
+Hormigón armado a la vista
+Ladrillos huecos cerámicos revocados
+Carpinterías de aluminio con vidriado de seguridad

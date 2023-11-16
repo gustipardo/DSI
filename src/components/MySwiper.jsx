@@ -15,7 +15,7 @@ export default function ImageSlider({ props }) {
         {props.frontmatter.imagenes.map((image, index) => (
           <SwiperSlide key={index}>
             <img
-              className="mx-auto my-auto h-96 object-cover max-w-full"
+              className="p-2 mx-auto my-auto h-96 object-cover max-w-full "
               src={`/projects/${props.frontmatter.name}/${image}`}
               alt={`Image ${index + 1}`}
             />
