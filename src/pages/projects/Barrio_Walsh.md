@@ -6,4 +6,15 @@ order: 1
 layout: '../../Layout/ProjectPost.astro'
 name: 'Barrio_Walsh'
 ---
-Construccion y reparacion de viviendas.
+**Obra en ejecución**
+
+Construccion y reparacion de viviendas ubicadas en Gonzalez Catán.
+
+### Realizado:
++ Reparacion de tejado
++ Pintado
++ Instalacion Electrica
++ Instalacion Fluvial
+
+# asdasdsd
+

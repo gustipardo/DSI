@@ -1,10 +1,10 @@
 ---
-title: 'Edificio de Oficinas Polo Este'
+title: 'JARDIN_903_VIVORATA'
 ubicacion: 'Moron'
-imagenes: ['Edificio_de_Oficinas_Polo_Este.jpg']
-order: 8
+imagenes: ['JARDIN(3).jpeg','JARDIN(5).jpeg','JARDIN(10).jpeg','JARDIN(11).jpeg','JARDIN(13).jpeg','JARDIN(14).jpeg','JARDIN(15).jpeg']
+order: 2    
 layout: '../../Layout/ProjectPost.astro'
-name: 'Edificio_de_Oficinas_Polo_Este'
+name: 'JARDIN_903_VIVORATA'
 ---
 
 **Obra en ejecución**
