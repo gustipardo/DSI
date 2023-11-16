@@ -12,13 +12,16 @@ export default function ImageSlider({ props }) {
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
     >
-      <p>Test 1</p>
-      {props.map((image, index) => (
-        <SwiperSlide key={index}>
-         <img src={`/projects/Barrio_Walsh/${image}`} alt={`Image ${index + 1}`} />
-        </SwiperSlide>
-
-      ))}
+      <p>Test 2.</p>
+      {props && props.imagenes && (
+  <Swiper>
+    {props.imagenes.map((image, index) => (
+      <SwiperSlide key={index}>
+        <img src={`../../public/${props.url}/${image}`} alt={`Image ${index + 1}`} />
+      </SwiperSlide>
+    ))}
+  </Swiper>
+)}
     </Swiper>
   );
 }
