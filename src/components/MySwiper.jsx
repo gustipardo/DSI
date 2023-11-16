@@ -2,7 +2,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 
 import 'swiper/css';
-export default function ImageSlider({props}) {
+export default function ImageSlider({ props }) {
+  console.log(props)
   return (
     
     <Swiper
@@ -11,10 +12,12 @@ export default function ImageSlider({props}) {
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
     >
-      <SwiperSlide><img src="../../public/1.jpg"/></SwiperSlide>
-      <SwiperSlide><img src="../../public/3.jpg"/></SwiperSlide>
-      <SwiperSlide><img src={props}/></SwiperSlide>
-      <SwiperSlide>{props}</SwiperSlide>
+      {props.map((image, index) => (
+        <SwiperSlide key={index}>
+         <img src={`/projects/Barrio_Walsh/${image}`} alt={`Image ${index + 1}`} />
+        </SwiperSlide>
+
+      ))}
     </Swiper>
   );
 }
