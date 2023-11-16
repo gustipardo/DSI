@@ -13,7 +13,7 @@ export default function ImageSlider({props}) {
     >
       <SwiperSlide><img src="../../public/1.jpg"/></SwiperSlide>
       <SwiperSlide><img src="../../public/3.jpg"/></SwiperSlide>
-      <SwiperSlide><img src="../../public/2.png"/></SwiperSlide>
+      <SwiperSlide><img src={props}/></SwiperSlide>
       <SwiperSlide>{props}</SwiperSlide>
     </Swiper>
   );
