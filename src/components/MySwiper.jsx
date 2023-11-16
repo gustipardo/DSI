@@ -12,6 +12,7 @@ export default function ImageSlider({ props }) {
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
     >
+      <p>Test 1</p>
       {props.map((image, index) => (
         <SwiperSlide key={index}>
          <img src={`/projects/Barrio_Walsh/${image}`} alt={`Image ${index + 1}`} />
