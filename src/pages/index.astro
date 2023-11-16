@@ -1,7 +1,5 @@
 ---
 import Card from '../components/Card.astro'
-import MySwiper from '../components/MySwiper';
-import Swiper from '../components/Swiper';
 import Layout from '../Layout/Layout.astro'
 const numeroAleatorio = Math.floor(Math.random() * 3) + 1;
 console.log(numeroAleatorio)
@@ -23,14 +21,6 @@ console.log("Imágenes:", imagenes);
 console.log("Nombre:", project);
 ---
 <Layout title='DSI Constructora'>
-   <Swiper client:load/>
-   <br/>
-   <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-   <br/>
-
-   <MySwiper props="/projects/Nodo_Sanitario/estudio.jpeg" client:load/>
-<img src="/projects/Barrio_Walsh/Barrio_Walsh.jpeg"/>
-
     <section id="nosotros">
       <div class="bg-image bg-no-repeat"
      style=`background-image: url('../../assets/Front-page/${numeroAleatorio}.jpg'); background-size: cover; background-position: center; height: 100vh;`>
