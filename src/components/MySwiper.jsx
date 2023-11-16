@@ -2,7 +2,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 
 import 'swiper/css';
-export default function ImageSlider() {
+export default function ImageSlider({props}) {
   return (
     
     <Swiper
@@ -14,7 +14,7 @@ export default function ImageSlider() {
       <SwiperSlide><img src="../../public/1.jpg"/></SwiperSlide>
       <SwiperSlide><img src="../../public/3.jpg"/></SwiperSlide>
       <SwiperSlide><img src="../../public/2.png"/></SwiperSlide>
-      <SwiperSlide>Slide 4</SwiperSlide>
+      <SwiperSlide>{props}</SwiperSlide>
     </Swiper>
   );
 }
