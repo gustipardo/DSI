@@ -1,12 +1,35 @@
 ---
 import Card from '../components/Card.astro'
+import MySwiper from '../components/MySwiper';
 import Swiper from '../components/Swiper';
 import Layout from '../Layout/Layout.astro'
 const numeroAleatorio = Math.floor(Math.random() * 3) + 1;
 console.log(numeroAleatorio)
+const { title } = Astro.props;
+const allPosts = await Astro.glob("../pages/projects/*.md");
+const currentPath = Astro.url.pathname;
+    
+
+
+const currentProject = allPosts.find(post => post.url === currentPath);
+
+const imagenes = currentProject?.frontmatter.imagenes;
+const project = currentProject;
+const name = currentProject?.frontmatter.name;
+const ProjectTitle = currentProject?.frontmatter.title;
+console.log("Imágenes:", allPosts);
+console.log("Imágenes:", currentPath);
+console.log("Imágenes:", imagenes);
+console.log("Nombre:", project);
 ---
 <Layout title='DSI Constructora'>
    <Swiper client:load/>
+   <br/>
+   <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+   <br/>
+
+   <MySwiper client:load/>
+
 
     <section id="nosotros">
       <div class="bg-image bg-no-repeat"
