@@ -1,11 +1,12 @@
 ---
 import Card from '../components/Card.astro'
+import Swiper from '../components/Swiper';
 import Layout from '../Layout/Layout.astro'
 const numeroAleatorio = Math.floor(Math.random() * 3) + 1;
 console.log(numeroAleatorio)
 ---
 <Layout title='DSI Constructora'>
-
+   <Swiper client:load/>
 
     <section id="nosotros">
       <div class="bg-image bg-no-repeat"
@@ -51,7 +52,7 @@ console.log(numeroAleatorio)
         <img src="https://firebasestorage.googleapis.com/v0/b/dsi-constructora.appspot.com/o/assets%2Fmap.jpg?alt=media&token=38f106de-35da-40c2-8f22-22ec7105bcaa"/>
       </div>
     </section>
-
+    
 </Layout>
 
 
