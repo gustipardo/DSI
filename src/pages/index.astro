@@ -8,7 +8,7 @@ console.log(numeroAleatorio)
 const { title } = Astro.props;
 const allPosts = await Astro.glob("../pages/projects/*.md");
 const currentPath = Astro.url.pathname;
-    
+
 
 
 const currentProject = allPosts.find(post => post.url === currentPath);
@@ -28,7 +28,7 @@ console.log("Nombre:", project);
    <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
    <br/>
 
-   <MySwiper props="  /projects/Barrio_Walsh/Barrio_Walsh.jpeg" client:load/>
+   <MySwiper props="/projects/Nodo_Sanitario/estudio.jpeg" client:load/>
 <img src="/projects/Barrio_Walsh/Barrio_Walsh.jpeg"/>
 
     <section id="nosotros">
