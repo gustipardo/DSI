@@ -9,7 +9,7 @@ console.log(allPosts)
 <Layout title='DSI Constructora'>
     <div class="flex flex-wrap justify-around">
         {allPosts.map((post) => <Project
-        url={post.url}
+        url={post.frontmatter.name}
         title={post.frontmatter.title}
         ubication={post.frontmatter.ubicacion}
         image={post.frontmatter.imagenes[0]}

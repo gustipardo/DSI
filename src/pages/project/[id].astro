@@ -1,0 +1,33 @@
+---
+import Layout from "../../Layout/Layout.astro";
+
+const { id }  = Astro.params
+
+const allPosts = await Astro.glob("../../pages/projects/*.md");
+console.log(allPosts)
+
+
+const currentProject = allPosts.find(post => post.frontmatter.name === id);
+
+
+
+export async function getStaticPaths(){
+    const allPosts = await Astro.glob("../../pages/projects/*.md");
+    const projects =  allPosts.map(project => project.frontmatter.name);
+    return projects.map(project => ({
+        params: {id: project}
+    }))
+}
+
+---
+
+<Layout title={id}>
+    <article>
+        {currentProject?.frontmatter.imagenes}
+        <img class=" rounded-none border-b  border-t border-l border-gray-400 lg:border-l-0 lg:border-t 
+        lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r flex flex-col 
+        justify-between leading-normal h-80" src=`../../projects/${currentProject.frontmatter.name}/${currentProject?.frontmatter.imagenes[0]}` 
+        transition:name={currentProject.frontmatter.name};>
+        
+    </article>
+</Layout>
