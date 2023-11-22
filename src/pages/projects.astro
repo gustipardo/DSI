@@ -1,10 +1,9 @@
 ---
-import Layout from '../Layout/Layout.astro';
-import Project from '../components/Project.astro'
+import Layout from '@/Layout/Layout.astro';
+import Project from '@/components/Project.astro'
 
 const allPosts = await Astro.glob("../pages/projects/*.md");
 console.log(allPosts)
-
 ---
 
 <Layout title='DSI Constructora'>
