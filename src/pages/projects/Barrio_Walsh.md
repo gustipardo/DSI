@@ -15,6 +15,4 @@ Construccion y reparacion de viviendas ubicadas en Gonzalez Catán.
 + Pintado
 + Instalacion Electrica
 + Instalacion Fluvial
-
-# asdasdsd
-
+asdsad
