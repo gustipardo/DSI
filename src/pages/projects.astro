@@ -7,7 +7,8 @@ console.log(allPosts)
 ---
 
 <Layout title='DSI Constructora'>
-    <div class="flex flex-wrap justify-around">
+
+    <div class="flex flex-wrap justify-around gap-x-3 p-1.5">
         {allPosts.map((post) => <Project
         url={post.frontmatter.name}
         title={post.frontmatter.title}

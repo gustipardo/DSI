@@ -24,10 +24,14 @@ export async function getStaticPaths(){
 <Layout title={id}>
     <article>
         {currentProject?.frontmatter.imagenes}
+        <!-- <img class=" rounded-none border-b  border-t border-l border-gray-400 lg:border-l-0 lg:border-t 
+        lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r flex flex-col 
+        justify-between leading-normal h-60" src=`../../public/projects/${currentProject.frontmatter.name}/${currentProject?.frontmatter.imagenes[0]}` 
+        transition:name={currentProject.frontmatter.name};> -->
+
         <img class=" rounded-none border-b  border-t border-l border-gray-400 lg:border-l-0 lg:border-t 
         lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r flex flex-col 
-        justify-between leading-normal h-80" src=`../../projects/${currentProject.frontmatter.name}/${currentProject?.frontmatter.imagenes[0]}` 
-        transition:name={currentProject.frontmatter.name};>
-        
+        justify-between leading-normal h-60" src=`../../public/projects/Barrio_Walsh/Barrio_Walsh1.jpg` 
+        transition:name="1";>
     </article>
 </Layout>
