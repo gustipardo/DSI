@@ -8,6 +8,9 @@
       ],
       "@/projects": [
         "public/projects/*"
+      ],
+      "@/components": [
+        "public/components/*"
       ]
     },
     "jsx": "react-jsx",

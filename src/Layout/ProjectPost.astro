@@ -4,6 +4,7 @@ import { ViewTransitions } from 'astro:transitions';
 import '../styles/global.css'
 import ProjectButton from '../components/ProjectButton.astro';
 import Project from '../components/Project.astro';
+import Swiper from '@/components/Swiper.astro'
 interface Props {
     title: string;
 }
@@ -23,6 +24,7 @@ console.log("Imágenes:", allPosts);
 console.log("Imágenes:", currentPath);
 console.log("Imágenes:", imagenes);
 console.log("Nombre:", project);
+
 ---
 
 <html lang="en">
@@ -41,8 +43,7 @@ console.log("Nombre:", project);
     <div id="project" class=" w-8/12 p-5 flex flex-col justify-center self-center">
         <left class="[grid-area:left] bg-blue-100 min-h-[500px] flex-col items-center justify-center ">
             
-            <h1 class="p-2 text-5xl font-extrabold dark:text-white text-center" style="text-align: center; color: black; font-weight: bold;">{ ProjectTitle }</h1>
-            <img src=`../../public/projects/${name}/${imagenes[0]}`/>
+            <h1 class="p-2 text-5xl font-extrabold dark:text-white text-center" style="text-align: center; color: black; font-weight: bold;">{ ProjectTitle }</h1>            <Swiper project={project} client:load/>
         </left>
         
         <detailsProject id="detailsProject" class="[grid-area:detailsProject] min-h-[200px]">

@@ -1,0 +1,37 @@
+---
+const {project} = Astro.props
+---
+
+<nav transition:animate="none">
+<button data-Siguiente>Siguiente</button>
+<button data-Anterior>Anterior</button>
+<img id="miImagen" data-image src=`../../public/projects/${project.frontmatter.name}/${project.frontmatter.imagenes[0]}`/>
+</nav>
+
+<style>
+</style>
+
+<script>
+   
+   const Siguiente = document.querySelectorAll('[data-Siguiente]');
+   const Anterior = document.querySelectorAll('[data-Anterior]');
+const imagen = document.querySelectorAll('[data-image]')[0] as HTMLImageElement;
+
+let number = 2
+
+Siguiente.forEach((button) => {
+    button.addEventListener('click', () => {
+        number=(number%3)+1
+        console.log(number)
+        imagen.src = `../../public/projects/Barrio_Walsh/Barrio_Walsh${number}.jpg`;
+    });
+  });
+  Anterior.forEach((button) => {
+    button.addEventListener('click', () => {
+        number=(number - 2 + 3) % 3 + 1
+        console.log(number)
+        imagen.src = `../../public/projects/Barrio_Walsh/Barrio_Walsh${number}.jpg`;
+    });
+  });
+
+</script>
