@@ -2,36 +2,40 @@
 const {project} = Astro.props
 ---
 
-<nav transition:animate="none">
-<button data-Siguiente>Siguiente</button>
-<button data-Anterior>Anterior</button>
-<img id="miImagen" data-image src=`../../public/projects/${project.frontmatter.name}/${project.frontmatter.imagenes[0]}`/>
-</nav>
+<div class="relative " transition:animate="none">
+    <img id="miImagen" data-image src=`../../public/projects/${project.frontmatter.name}/${project.frontmatter.imagenes[0]}`/>
+    <button data-Anterior><img class="h-10 w-6 absolute inset-y-0 w-16 top-1/4 " src="../../public/assets/arrow.png"/></button>
+    <button data-Siguiente><img class="h-10 w-6 absolute inset-y-0 right-0 w-16 top-1/4  rotate-180" src="../../public/assets/arrow.png"/></button>
+</div>
 
 <style>
 </style>
 
 <script>
-   
-   const Siguiente = document.querySelectorAll('[data-Siguiente]');
-   const Anterior = document.querySelectorAll('[data-Anterior]');
-const imagen = document.querySelectorAll('[data-image]')[0] as HTMLImageElement;
+    const Siguiente = document.querySelectorAll('[data-Siguiente]');
+    const Anterior = document.querySelectorAll('[data-Anterior]');
+    const imagen = document.querySelectorAll('[data-image]')[0] as HTMLImageElement;
 
-let number = 2
+    // Obtener la URL actual de la imagen
+    const imagenUrl = imagen?.src;
 
-Siguiente.forEach((button) => {
-    button.addEventListener('click', () => {
-        number=(number%3)+1
-        console.log(number)
-        imagen.src = `../../public/projects/Barrio_Walsh/Barrio_Walsh${number}.jpg`;
+    // Extraer el número de la URL (asumiendo que es el último número en la ruta)
+    const matches = imagenUrl.match(/(\d+)\.jpg$/);
+    let number = matches ? parseInt(matches[1], 10) : 1;
+
+    Siguiente.forEach((button) => {
+        button.addEventListener('click', () => {
+            number = (number % 3) + 1;
+            console.log(number);
+            imagen.src = imagenUrl.replace(/\d+\.jpg$/, `${number}.jpg`);
+        });
     });
-  });
-  Anterior.forEach((button) => {
-    button.addEventListener('click', () => {
-        number=(number - 2 + 3) % 3 + 1
-        console.log(number)
-        imagen.src = `../../public/projects/Barrio_Walsh/Barrio_Walsh${number}.jpg`;
-    });
-  });
 
+    Anterior.forEach((button) => {
+        button.addEventListener('click', () => {
+            number = (number - 2 + 4) % 4 + 1;
+            console.log(number);
+            imagen.src = imagenUrl.replace(/\d+\.jpg$/, `${number}.jpg`);
+        });
+    });
 </script>
