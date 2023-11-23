@@ -8,7 +8,8 @@ name: 'Barrio_Walsh'
 ---
 **Obra en ejecución**
 
-Construccion y reparacion de viviendas ubicadas en Gonzalez Catán.
+Construccion y reparacion de viviendas 
+ubicadas en Gonzalez Catán.
 
 #### Realizado:
 + Reparacion de tejado
@@ -20,7 +21,8 @@ Construccion y reparacion de viviendas ubicadas en Gonzalez Catán.
 
 ## Título
 ### Subtítulo
-Este es un ejemplo de texto que da entrada a una lista genérica de elementos:
+Este es un ejemplo de texto que da entrada a 
+una lista genérica de elementos:
 - Elemento 1
 - Elemento 2
 - Elemento 3

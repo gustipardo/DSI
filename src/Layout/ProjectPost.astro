@@ -39,17 +39,19 @@ console.log("Nombre:", name);
     <Navigation/>
     <div class="flex flex-col items-center justify-center ">
     <div id="project" class=" w-8/12 p-5 flex flex-col justify-center self-center">
-        <name class="bg-white flex justify-center">
+        <name class="[grid-area:name] bg-white flex justify-center">
             <h1 class="py-2 text-5xl font-extrabold dark:text-white text-center flex justify-center self-center" style="text-align: center; color: black; font-weight: bold;">{ ProjectTitle }</h1>
         </name>
-        <left class="[grid-area:left] bg-blue-100 min-h-[500px] flex-col items-center justify-center ">
+        <left class="[grid-area:left] bg-white  flex flex-col justify-center self-center ">
+            <div class="max-h-[100vh] max-w-[100vw] overflow-hidden">
             <MySwiper posts={allPosts} client:only/>
+            </div>
         </left>
             
-        <detailsProject id="detailsProject" class="[grid-area:detailsProject] min-h-[200px] p-4">
+        <detailsProject id="detailsProject" class="[grid-area:detailsProject]   p-8">
             <slot/> 
         </detailsProject>
-        <logo id="logo" class="[grid-area:logo] bg-white min-h-[80px] flex justify-center  py-2 ">
+        <logo id="logo" class="[grid-area:logo] h-full bg-white ] flex justify-center  py-2 ">
             <ProjectButton isRight={false}/>
             <a href="/" class="flex justify-center self-center"><img class="w-full" src="/assets/logo.svg"/></a>
             <ProjectButton isRight={true}/>
@@ -66,27 +68,29 @@ console.log("Nombre:", name);
         "name logo"
         "left detailsProject";
 
-        grid-template-columns: 400px 260px;
-        grid-template-rows:  auto;
+        grid-template-columns: 60% 40%;
+        grid-template-rows: auto 1fr;
         border-radius: 100px;
-      }
-      @media (max-width: 800px) {
+    }
+    @media (max-width: 800px) {
             #project {
                 grid-template-areas:
-                  "left"
-                  "detailsProject"
-                  "logo";
-                grid-template-columns: 350px 1fr;
-                grid-template-rows: 1fr auto;
+                "name"
+                "left"
+                "detailsProject"
+                "logo";
+                grid-template-columns: auto;
+                grid-template-rows: auto;
             }
         }
     #detailsProject{
         background-color: rgb(35, 31, 32);
         color: white;
-      }
-     #logo{
+        
+    }
+    #logo{
         /* background-color: rgb(255, 241, 0); */
-     }
+    }
     </style>
 </body>
 </html>

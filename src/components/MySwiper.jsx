@@ -11,8 +11,9 @@ console.log(posts)
   const props = posts.find(prop => prop.frontmatter.name === name);
   console.log(props)
   return (
-    <div>
+    <div className='bg-white max-h[500px]'>
       <Swiper
+        className='bg-white max-h[500px]'
         spaceBetween={50}
         slidesPerView={1}
         onSlideChange={() => console.log('slide change')}
@@ -23,6 +24,7 @@ console.log(posts)
             <img
               src={`/projects/${props.frontmatter.name}/${image}`}
               alt={`Image ${index + 1}`}
+
             />
           </SwiperSlide>
         ))}
