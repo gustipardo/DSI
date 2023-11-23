@@ -1,5 +1,6 @@
 ---
 import Layout from '../Layout/Layout.astro';
+import MySwiper from '../components/MySwiper';
 import Project from '../components/Project.astro'
 
 const allPosts = await Astro.glob("../pages/projects/*.md");
@@ -16,6 +17,7 @@ console.log(allPosts)
         image={post.frontmatter.imagenes[0]}
         name={post.frontmatter.name}/>)}
     </div>
+    <MySwiper name='JARDIN_903_VIVORATA' client:load/>
 </Layout>
 
 
