@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 
-export default function ImageSlider() {
+export default function ImageSlider({name}) {
   const allprops =  [
 {
 frontmatter: {
@@ -35,7 +35,7 @@ __esModule: true,
 frontmatter: {
   title: 'JARDIN_903_VIVORATA',
   ubicacion: 'Moron',
-  imagenes: Array(7) [
+  imagenes: [
     'JARDIN(3).jpeg', 'JARDIN(5).jpeg', 'JARDIN(10).jpeg', 'JARDIN(11).jpeg',
     'JARDIN(13).jpeg', 'JARDIN(14).jpeg', 'JARDIN(15).jpeg'
   ],
@@ -118,7 +118,8 @@ url: '/projects/Soldado_Argentino',
 __esModule: true,
 }
 ]
-  const props = allprops[0]
+
+  const props = allprops.find(post => post.frontmatter.name === name);
   return (
     <div>
       <Swiper
