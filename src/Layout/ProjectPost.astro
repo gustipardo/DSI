@@ -40,7 +40,7 @@ console.log("Nombre:", name);
     <div class="flex flex-col items-center justify-center ">
     <div id="project" class=" w-8/12 p-5 flex flex-col justify-center self-center">
         <name class="bg-white flex justify-center">
-            <h1 class="p-2 pt-4 text-5xl font-extrabold dark:text-white text-center" style="text-align: center; color: black; font-weight: bold;">{ ProjectTitle }</h1>
+            <h1 class="py-2 text-5xl font-extrabold dark:text-white text-center flex justify-center self-center" style="text-align: center; color: black; font-weight: bold;">{ ProjectTitle }</h1>
         </name>
         <left class="[grid-area:left] bg-blue-100 min-h-[500px] flex-col items-center justify-center ">
             <MySwiper posts={allPosts} client:only/>
@@ -49,9 +49,9 @@ console.log("Nombre:", name);
         <detailsProject id="detailsProject" class="[grid-area:detailsProject] min-h-[200px] p-4">
             <slot/> 
         </detailsProject>
-        <logo id="logo" class="[grid-area:logo] bg-white min-h-[80px] flex justify-center self-center ">
+        <logo id="logo" class="[grid-area:logo] bg-white min-h-[80px] flex justify-center  py-2 ">
             <ProjectButton isRight={false}/>
-            <a href="/" class="mx-4"><img class="w-full" src="/assets/logo.svg"/></a>
+            <a href="/" class="flex justify-center self-center"><img class="w-full" src="/assets/logo.svg"/></a>
             <ProjectButton isRight={true}/>
         </logo>
     </div>
@@ -63,11 +63,11 @@ console.log("Nombre:", name);
         #project{
         display: grid;
         grid-template-areas:
-        "name logo"  
+        "name logo"
         "left detailsProject";
 
         grid-template-columns: 400px 260px;
-        grid-template-rows:  auto auto;
+        grid-template-rows:  auto;
         border-radius: 100px;
       }
       @media (max-width: 800px) {
