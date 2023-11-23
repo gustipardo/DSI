@@ -22,7 +22,7 @@ const ProjectTitle = currentProject?.frontmatter.title;
 console.log("Imágenes:", allPosts);
 console.log("Imágenes:", currentPath);
 console.log("Imágenes:", imagenes);
-console.log("Nombre:", ProjectTitle);
+console.log("Nombre:", name);
 ---
 
 <html lang="en">
@@ -42,7 +42,7 @@ console.log("Nombre:", ProjectTitle);
         <left class="[grid-area:left] bg-blue-100 min-h-[500px] flex-col items-center justify-center ">
             
             <h1 class="p-2 text-5xl font-extrabold dark:text-white text-center" style="text-align: center; color: black; font-weight: bold;">{ ProjectTitle }</h1>
-            <MySwiper name='Barrio_Walsh' posts={allPosts} client:load/>
+            <MySwiper name={name} posts={allPosts} client:load/>
         </left>
             
         <detailsProject id="detailsProject" class="[grid-area:detailsProject] min-h-[200px]">
