@@ -6,6 +6,20 @@ import Project from '../components/Project.astro'
 const allPosts = await Astro.glob("../pages/projects/*.md");
 console.log(allPosts)
 
+const currentPath = Astro.url.pathname;
+    
+
+
+const currentProject = allPosts.find(post => post.url === currentPath);
+
+const imagenes = currentProject?.frontmatter.imagenes;
+const project = currentProject;
+const name = currentProject?.frontmatter.name;
+const ProjectTitle = currentProject?.frontmatter.title;
+console.log("Imágenes:", allPosts);
+console.log("Imágenes:", currentPath);
+console.log("Imágenes:", imagenes);
+console.log("Nombre:", project);
 ---
 
 <Layout title='DSI Constructora'>
@@ -17,7 +31,7 @@ console.log(allPosts)
         image={post.frontmatter.imagenes[0]}
         name={post.frontmatter.name}/>)}
     </div>
-    <MySwiper name='JARDIN_903_VIVORATA' client:load/>
+    <MySwiper name='JARDIN_903_VIVORATA' posts={allPosts} client:load/>
 </Layout>
 
 
