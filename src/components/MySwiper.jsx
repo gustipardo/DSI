@@ -119,7 +119,7 @@ __esModule: true,
 }
 ]
 console.log(allprops)
-  const props = allprops.find(prop => prop.frontmatter.name === 'JARDIN_903_VIVORATA');
+  const props = allprops.find(prop => prop.frontmatter.name === name);
   console.log(props)
   return (
     <div>
