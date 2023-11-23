@@ -1,9 +1,23 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 
-export default function ImageSlider({ props }) {
-  console.log(props)
-  console.log(props.frontmatter.name)
+export default function ImageSlider() {
+
+  const props =
+  {
+    frontmatter: {
+      title: 'Barrio Walsh',
+      ubicacion: 'González Catán',
+      imagenes: [ 'Barrio_Walsh.jpeg', 'Barrio_Walsh2.jpg', 'Barrio_Walsh3.jpg' ],
+      order: 1,
+      layout: '../../Layout/ProjectPost.astro',
+      name: 'Barrio_Walsh'
+    },
+    file: 
+      'C:/Users/gusm2/OneDrive/Escritorio/DSI Nuevo/DSI React/DSI/src/pages/projects/Barrio_Walsh.md',
+    url: '/projects/Barrio_Walsh',
+  }
+
   return (
     <div>
       <Swiper
