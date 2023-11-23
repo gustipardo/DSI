@@ -39,31 +39,35 @@ console.log("Nombre:", name);
     <Navigation/>
     <div class="flex flex-col items-center justify-center ">
     <div id="project" class=" w-8/12 p-5 flex flex-col justify-center self-center">
-        <left class="[grid-area:left] bg-blue-100 min-h-[500px] flex-col items-center justify-center ">
-            
+        <name class="bg-white">
             <h1 class="p-2 text-5xl font-extrabold dark:text-white text-center" style="text-align: center; color: black; font-weight: bold;">{ ProjectTitle }</h1>
+        </name>
+        <left class="[grid-area:left] bg-blue-100 min-h-[500px] flex-col items-center justify-center ">
             <MySwiper posts={allPosts} client:only/>
         </left>
             
-        <detailsProject id="detailsProject" class="[grid-area:detailsProject] min-h-[200px]">
+        <detailsProject id="detailsProject" class="[grid-area:detailsProject] min-h-[200px] p-4">
             <slot/> 
         </detailsProject>
-        <logo id="logo" class="[grid-area:logo] bg-white     min-h-[150px] flex justify-center self-center ">
+        <logo id="logo" class="[grid-area:logo] bg-white min-h-[80px] flex justify-center self-center ">
             <ProjectButton isRight={false}/>
-            <img class="w-6/12" src="/assets/logo.svg"/>
+            <a href="/" class="mx-4"><img class="w-full" src="/assets/logo.svg"/></a>
             <ProjectButton isRight={true}/>
         </logo>
     </div>
 </div>
     <style>
+        *{
+            color: black;
+        }
         #project{
         display: grid;
         grid-template-areas:
-          "left detailsProject"
-          "left detailsProject    "
-          "left logo";
-        grid-template-columns: 350px 1fr;
-        grid-template-rows: 1fr auto;
+        "name logo"  
+        "left detailsProject";
+
+        grid-template-columns: 400px 260px;
+        grid-template-rows:  auto auto;
         border-radius: 100px;
       }
       @media (max-width: 800px) {

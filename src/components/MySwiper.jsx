@@ -21,7 +21,6 @@ console.log(posts)
         {props.frontmatter.imagenes.map((image, index) => (
           <SwiperSlide key={index}>
             <img
-              className="p-2 mx-auto my-auto h-96 object-cover max-w-full "
               src={`/projects/${props.frontmatter.name}/${image}`}
               alt={`Image ${index + 1}`}
             />

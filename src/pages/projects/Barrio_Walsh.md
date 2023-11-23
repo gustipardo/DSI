@@ -10,11 +10,11 @@ name: 'Barrio_Walsh'
 
 Construccion y reparacion de viviendas ubicadas en Gonzalez Catán.
 
-### Realizado:
+# Realizado:
 + Reparacion de tejado
 + Pintado
 + Instalacion Electrica
 + Instalacion Fluvial
 
-# asdasdsd
+
 
