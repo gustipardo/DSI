@@ -119,7 +119,7 @@ __esModule: true,
 }
 ]
 console.log(allprops)
-  const props = allprops.find(prop => prop.frontmatter.name === name);
+  const props = posts.find(prop => prop.frontmatter.name === name);
   console.log(props)
   return (
     <div>
