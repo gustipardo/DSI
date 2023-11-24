@@ -1,6 +1,7 @@
 ---
 import Card from '../components/Card.astro'
 import Layout from '../Layout/Layout.astro'
+import GoogleMap from '../components/GoogleMap.jsx'
 const numeroAleatorio = Math.floor(Math.random() * 3) + 1;
 console.log(numeroAleatorio)
 const { title } = Astro.props;
@@ -65,7 +66,8 @@ console.log("Nombre:", project);
             <a href="https://twitter.com/DSIconstructora" class="text-blue-500 hover:underline">Twitter</a>
           </div>
         </div>
-        <img src="https://firebasestorage.googleapis.com/v0/b/dsi-constructora.appspot.com/o/assets%2Fmap.jpg?alt=media&token=38f106de-35da-40c2-8f22-22ec7105bcaa"/>
+        <h3>Encuentranos:</h3>
+        <GoogleMap client:load/>
       </div>
     </section>
     
