@@ -25,3 +25,4 @@ Especialización en movimientos de suelo para preparar terrenos destinados a rut
 Realización de entoscados, bases para tanques industriales, calles, veredas, cordones, zanjeos para acueductos, playones y playas de estacionamiento. Ofrecemos también servicios completos de alumbrado público.
 
 Nuestro compromiso es llevar a cabo cada proyecto con eficiencia y excelencia, respaldados por una sólida trayectoria.
+
