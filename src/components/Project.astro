@@ -12,7 +12,7 @@ const { url, title, ubication, image, name} = Astro.props
         {ubication}
       </p>
     </div>  
-    <img class="w-full  rounded-none border-b  border-t border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r flex flex-col justify-between leading-normal" src=`../../projects/${name}/${image}` transition:name={name};>
+    <img id="image" class="w-full overflow-hidden rounded-none border-b  border-t border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r flex flex-col justify-between leading-normal" src=`../../projects/${name}/${image}` transition:name={name};>
       
   </div>
 </a>
@@ -20,5 +20,9 @@ const { url, title, ubication, image, name} = Astro.props
 <style>
   #card{
    height: auto;
+  }
+
+  #image{
+    height: 200px;
   }
 </style>
