@@ -2,24 +2,8 @@
 import Card from '../components/Card.astro'
 import Layout from '../Layout/Layout.astro'
 import GoogleMap from '../components/GoogleMap.jsx'
-const numeroAleatorio = Math.floor(Math.random() * 3) + 1;
+const numeroAleatorio = Math.floor(Math.random() * 1) + 1;
 console.log(numeroAleatorio)
-const { title } = Astro.props;
-const allPosts = await Astro.glob("../pages/projects/*.md");
-const currentPath = Astro.url.pathname;
-
-
-
-const currentProject = allPosts.find(post => post.url === currentPath);
-
-const imagenes = currentProject?.frontmatter.imagenes;
-const project = currentProject;
-const name = currentProject?.frontmatter.name;
-const ProjectTitle = currentProject?.frontmatter.title;
-console.log("Imágenes:", allPosts);
-console.log("Imágenes:", currentPath);
-console.log("Imágenes:", imagenes);
-console.log("Nombre:", project);
 
 
 
@@ -30,23 +14,42 @@ console.log("Nombre:", project);
      style=`background-image: url('../../assets/Front-page/${numeroAleatorio}.jpg'); background-size: cover; background-position: center; height: 100vh;`>
 
  
-     <div class="text-white text-center pt-32">
-      <h1 class="text-4xl font-bold text-white" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);">Somos Una Empresa Constructora</h1>
-      <p class="text-xl mt-4" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);">Especializada en trabajos topográficos y la construcción de grandes estructuras</p>
-  </div>
+     <div class="text-white text-center pt-60">
+      <h1 id="title" class="text-4xl font-bold text-white" style="text-shadow: 6px 6px 8px rgba(0, 0, 0, 0.8);">Somos Una Empresa Constructora</h1>
+      <p id="subtitle" class="text-xl mt-4" style="text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);">Especializada en trabajos topográficos y la construcción de grandes estructuras</p>
+    </div>
   
     </section>
-    <section id="servicios">
+    <section id="servicios" class="h-full ">
      
-        <div class="bg-white text-black py-8 mx-2 border-b-4 border-black">
-            <h2 class="text-3xl font-bold">Nuestros Servicios❤️</h2>
-            <p class="text-lg mt-4">Nos especializamos en trabajos topográficos y la construcción de grandes estructuras como edificios, galpones, etc.</p>
-            <Card title="TRABAJOS TOPOGRÁFICOS" image="https://firebasestorage.googleapis.com/v0/b/dsi-constructora.appspot.com/o/services%2Ftopo.svg?alt=media&token=1175a780-b800-4959-8c91-87fa5da4eca6" services={["Relevamientos plani-altimétricos.", "Estudio de Cuencas Hídricas.", "Cálculo y Ejecución de Mov. De Suelo.", "Acondicionamiento de Suelos para Grandes Estructuras."]}/>
-            <Card title="CONSTRUCCIÓN DE GRANDES ESTRUCTURAS" image="https://firebasestorage.googleapis.com/v0/b/dsi-constructora.appspot.com/o/services%2Fgrua.svg?alt=media&token=231b734e-3e8f-4230-9597-b1cddd00f0c7" services={["Fundaciones de Hormigón Armado.", "Estructuras Metálicas y de Hormigón.", "Mampostería, cerramientos.", "Construcción en seco.", "Pintura y revestimientos.", "Instalaciones Sanitarias, Eléctricas, Redes de datos, Refrigeración, detección y Extinción de Incendios."]} />
-        </div>
+        <div id="servicios-container" class="h-full bg-white text-black p-8 mx-2 border-b-4 border-black">
+            <h2 class="text-3xl font-bold">Nuestros Servicios</h2>
+            <p class="text-lg mt-4">Somos una empresa especializada en construcción e infraestructuras, con un equipo capacitado y maquinaria propia para garantizar resultados de calidad.<br> Especializados en:</p>
+            <Card title="Obras de Medio Ambiente:" 
+            image="../../assets/medio-ambiente.svg" 
+            services={["Tratamiento eficiente de residuos sólidos mediante rellenos sanitarios, reduciendo impactos ambientales y riesgos para la salud pública.", 
+            "Relleno Sanitario: Disposición final de residuos utilizando avanzadas técnicas de relleno sanitario, que incluyen la colocación de láminas protectoras para preservar las napas subterráneas y medidas para evitar la contaminación.", ]}/>
+            
+            <Card title="Infraestructura para Plantas de Tratamiento:" 
+            image="../../assets/pipe.svg" 
+            services={["Construcción de bases para cavas de bombeo y otros elementos necesarios para el tratamiento de efluentes y líquidos lixiviados."]}/>
+
+            <Card title="TRABAJOS TOPOGRÁFICOS" 
+            image="../../assets/topo.svg" 
+            services={["Especialización en movimientos de suelo para preparar terrenos destinados a rutas, caminos, asfalto u hormigón, con enfoque particular en obras civiles.","Relevamientos plani-altimétricos.", "Estudio de Cuencas Hídricas.", "Cálculo y Ejecución de Mov. De Suelo.", "Acondicionamiento de Suelos para Grandes Estructuras."]}/>
+           
+            <Card title="CONSTRUCCIÓN DE GRANDES ESTRUCTURAS" 
+            image="../../assets/grua.svg" services={["Realización de entoscados, bases para tanques industriales, calles, veredas, cordones, zanjeos para acueductos, playones y playas de estacionamiento. Ofrecemos también servicios completos de alumbrado público.","Fundaciones de Hormigón Armado.", "Estructuras Metálicas y de Hormigón.", "Mampostería, cerramientos.", "Construcción en seco.", "Pintura y revestimientos.", "Instalaciones Sanitarias, Eléctricas, Redes de datos, Refrigeración, detección y Extinción de Incendios."]} />
+            
+            <br>
+            <p><strong>Nuestro compromiso es llevar a cabo cada proyecto con eficiencia y excelencia, respaldados por una sólida trayectoria.
+            </strong></p>
+          </div>
+
     </section>
 
-    <section id="contacto" class="h-screen flex flex-col lg:flex-row justify-center items-center mx-2.5 p-4">
+
+    <section id="contacto" class="flex flex-col lg:flex-row justify-center items-center p-4">
       <div id="info" class="lg:mr-10 my-2">
           <h2 class="text-3xl font-bold">CONTACTO</h2>
           <div class="mt-4">
@@ -56,8 +59,8 @@ console.log("Nombre:", project);
             <p class="mb-2">Parque Industrial Buen Ayre, Moreno</p>
           </div>
           <div class="mt-4">
-            <p class="mb-2">EMAIL: info@dsiconstructora.com</p>
-            <p class="mb-2">TELÉFONO: 11-53078516</p>
+            <p class="mb-2"><strong>EMAIL:</strong> info@dsiconstructora.com</p>
+            <p class="mb-2"><strong>TELÉFONO:</strong> 11-53078516</p>
           </div>
           <div class="mt-4">
             <h3 class="text-xl font-bold ">SÍGUENOS</h3>
@@ -80,3 +83,37 @@ console.log("Nombre:", project);
 
     
 </Layout>
+<style>
+#contacto{
+height: 70vh;
+}
+@media screen and (max-width: 1020px) {
+  #contacto{
+height: 100vh;
+}
+  }
+
+#servicios-container{
+  padding: 100px;
+}
+
+@media screen and (max-width: 600px) {
+  #contacto{
+    padding: 0px;
+}
+  }
+
+#title, #subtitle{
+  text-shadow:
+        0.07em 0 black,
+        0 0.07em black,
+        -0.07em 0 black,
+        0 -0.07em black;
+}
+
+
+#subtitle{
+  font-size: 26px;
+}
+
+</style>

@@ -1,5 +1,5 @@
 .map-container {
-    height: 50%;
+    height: 80%;
     width: 50vw; /* Ancho del 100% */
   }
   
@@ -7,5 +7,23 @@
   @media screen and (max-width: 1020px) {
     .map-container {
       width: 90vw;
+    }
+  }
+
+
+  
+  .image {
+    /* Establece la posición inicial */
+    transform: translateY(0);
+    animation: moveUpDown 0.5s infinite alternate ease-in-out;
+  }
+  
+  @keyframes moveUpDown {
+    /* Define la animación */
+    0% {
+      transform: translateY(0); /* Posición inicial */
+    }
+    100% {
+      transform: translateY(-20px); /* Posición final */
     }
   }

@@ -1,7 +1,7 @@
 import React from "react";
 import GoogleMapReact from 'google-map-react';
 import '.././styles/Googlemap.css'
-const AnyReactComponent = ({ text }) => <img src="../../assets/w-pin.png"/>;
+const AnyReactComponent = ({ text }) => <img className="image" src="../../assets/w-pin.png"/>;
 
 export default function SimpleMap(){
   const defaultProps = {

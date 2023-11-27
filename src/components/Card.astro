@@ -9,10 +9,11 @@ const {image} = Astro.props
 const {services} = Astro.props
 ---
 
-<div class="max-w-sm w-full lg:max-w-full lg:flex">
-    <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style=`background-image: url('${image}')` title="Image">
-    </div>
-    <div class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+<div class="py-2 border border-gray-400  lg:border-t lg:border-gray-400 max-w-sm w-full lg:max-w-full lg:flex">
+    <img id="svg" class="h-full lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden py-2 pl-2 ml-4"
+        title="Image" src={image}/>
+
+    <div class=" bg-white rounded-b lg:rounded-b-none lg:rounded-r p-8 flex flex-col justify-between leading-normal">
         <div class="mb-8 text-left">
             <div class="text-gray-900 font-bold text-xl mb-2">{title}</div>
             <ul class="text-gray-700 text-base">
@@ -23,3 +24,14 @@ const {services} = Astro.props
         </div>
     </div>
 </div>
+<style>
+    @media screen and (max-width: 1022px) {
+  #svg{
+    padding: 20px;
+    width: 260px;
+    margin: auto;
+}
+    }
+    
+  
+</style>

@@ -19,7 +19,7 @@ Disposición final de residuos utilizando avanzadas técnicas de relleno sanitar
 Construcción de bases para cavas de bombeo y otros elementos necesarios para el tratamiento de efluentes y líquidos lixiviados.
 
 ## Movimientos de Suelo:
-Especialización en movimientos de suelo para preparar terrenos destinados a rutas, caminos, asfalto u hormigón, con enfoque particular en obras civiles.
+    Especialización en movimientos de suelo para preparar terrenos destinados a rutas, caminos, asfalto u hormigón, con enfoque particular en obras civiles.
 
 ## Obras de Infraestructuras Públicas y Privadas:
 Realización de entoscados, bases para tanques industriales, calles, veredas, cordones, zanjeos para acueductos, playones y playas de estacionamiento. Ofrecemos también servicios completos de alumbrado público.
