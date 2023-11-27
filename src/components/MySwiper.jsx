@@ -6,7 +6,7 @@ export default function ImageSlider({ posts}) {
   const urlParts = window.location.href.split('/');
 
   console.log(urlParts[urlParts.length-1])
-  name=urlParts[urlParts.length-1]
+  const name=urlParts[urlParts.length-1]
 console.log(posts)
   const props = posts.find(prop => prop.frontmatter.name === name);
   console.log(props)

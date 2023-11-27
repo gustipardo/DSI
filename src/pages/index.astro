@@ -46,8 +46,8 @@ console.log("Nombre:", project);
         </div>
     </section>
 
-    <section id="contacto" class="h-screen flex justify-center items-center">
-      <div id="info">
+    <section id="contacto" class="h-screen flex flex-col lg:flex-row justify-center items-center">
+      <div id="info" class="lg:mr-10">
           <h2 class="text-3xl font-bold">CONTACTO</h2>
           <div class="mt-4">
             <p class="mb-2">Martín de Gainza 801</p>
@@ -67,7 +67,7 @@ console.log("Nombre:", project);
             </div>
           </div>
       </div>
-      <div id="findus">
+      <div id="findus" class="mt-6 lg:mt-0">
         <GoogleMap client:load/>
       </div>
 
