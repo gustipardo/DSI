@@ -4,6 +4,7 @@ import { ViewTransitions } from 'astro:transitions';
 import '../styles/global.css'
 import MySwiper from '../components/MySwiper';
 import ProjectButton from '../components/ProjectButton.astro';
+import TitleComponent from '../components/TitleComponent';
 interface Props {
     title: string;
 }
@@ -42,7 +43,8 @@ console.log("Nombre:", name);
         <name class="[grid-area:name] bg-white flex justify-center">
             <h1 class="py-2 text-5xl font-extrabold text-black text-center flex justify-center self-center" 
             style="text-align: center; color: black; font-weight: bold;">{ currentProject?.frontmatter.title }</h1>
-            <p>Test titl e2</p>
+            <p>Test title3</p>
+            <TitleComponent posts={allPosts} client:only/>
         </name>
         <left class="[grid-area:left] bg-white  flex flex-col justify-center self-center ">
             <div class="max-h-[100vh] max-w-[100vw] overflow-hidden">
