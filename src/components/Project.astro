@@ -5,7 +5,7 @@ const { url, title, ubication, image, name} = Astro.props
 
 
 
-<a class="block outline-none  mb-10 " href={url}>
+<a id="card" class="block outline-none  mb-10" href={url}>
   <div class="max-w-sm overflow-hidden shadow-lg border border-gray-400 bg-white flex flex-col justify-between leading-normal rounded-2xl mb-4">    <div class="px-6 py-4 bg-slate-100 ">
       <h1 class="font-bold text-2xl text-black" >{title}</h1>
       <p class="text-gray-700 text-base">
@@ -16,3 +16,9 @@ const { url, title, ubication, image, name} = Astro.props
       
   </div>
 </a>
+
+<style>
+  #card{
+   height: auto;
+  }
+</style>
