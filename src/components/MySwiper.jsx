@@ -11,7 +11,11 @@ console.log(posts)
   const props = posts.find(prop => prop.frontmatter.name === name);
   console.log(props)
   return (
-    <div className='bg-white max-h[500px]'>
+    <div style={{
+      height: '50vh',
+      width: window.innerWidth < 800 ? '90vw' : '50vw',
+      transition: 'width 0.5s',  // Agregado para una transición suave del ancho
+    }}>
       <Swiper
         className='bg-white max-h[500px]'
         spaceBetween={50}
