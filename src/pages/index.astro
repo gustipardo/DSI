@@ -46,8 +46,8 @@ console.log("Nombre:", project);
         </div>
     </section>
 
-    <section id="contacto" class="h-screen flex flex-col lg:flex-row justify-center items-center">
-      <div id="info" class="lg:mr-10">
+    <section id="contacto" class="h-screen flex flex-col lg:flex-row justify-center items-center mx-2.5 p-4">
+      <div id="info" class="lg:mr-10 my-2">
           <h2 class="text-3xl font-bold">CONTACTO</h2>
           <div class="mt-4">
             <p class="mb-2">Martín de Gainza 801</p>
@@ -60,19 +60,23 @@ console.log("Nombre:", project);
             <p class="mb-2">TELÉFONO: 11-53078516</p>
           </div>
           <div class="mt-4">
-            <h3 class="text-xl font-bold">SÍGUENOS</h3>
-            <div class="mt-2">
-              <a href="https://www.instagram.com/dsiconstructora/" class="text-blue-500 hover:underline mr-4">Instagram</a>
-              <a href="https://twitter.com/DSIconstructora" class="text-blue-500 hover:underline">Twitter</a>
+            <h3 class="text-xl font-bold ">SÍGUENOS</h3>
+            <div class="mt-2 flex">
+                <a href="https://www.instagram.com/dsiconstructora/" class="text-blue-500 mx-2.5 hover:underline inline">
+                  <img src="../../public/assets/iga.png" alt="Instagram">
+                </a>
+                <a href="https://www.instagram.com/dsiconstructora/" class="text-blue-500 mx-2.5 hover:underline inline">
+                  <img src="../../public/assets/tw.png" alt="Twitter">
+                </a>
+
             </div>
           </div>
       </div>
-      <div id="findus" class="mt-6 lg:mt-0">
+
         <GoogleMap client:load/>
-      </div>
+
 
     </section>
+
     
 </Layout>
-
-

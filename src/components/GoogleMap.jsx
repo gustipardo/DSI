@@ -1,5 +1,6 @@
 import React from "react";
 import GoogleMapReact from 'google-map-react';
+import '.././styles/Googlemap.css'
 const AnyReactComponent = ({ text }) => <img src="../../assets/w-pin.png"/>;
 
 export default function SimpleMap(){
@@ -13,7 +14,7 @@ export default function SimpleMap(){
 
   return (
     // Important! Always set the container height explicitly
-    <div style={{ height: '50vh', width: '50vw' }}>
+    <div className="map-container">
       <GoogleMapReact
         bootstrapURLKeys={{ key: "" }}
         defaultCenter={defaultProps.center}
