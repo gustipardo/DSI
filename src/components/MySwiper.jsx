@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-
+import '../styles/swiperComponent.css'
 export default function ImageSlider({ posts}) {
 
   const urlParts = window.location.href.split('/');
@@ -26,6 +26,7 @@ console.log(posts)
         {props.frontmatter.imagenes.map((image, index) => (
           <SwiperSlide key={index}>
             <img
+              className='Swiper-image'
               src={`/projects/${props.frontmatter.name}/${image}`}
               alt={`Image ${index + 1}`}
 

@@ -1,0 +1,160 @@
+---
+interface Props {
+    posts: Array<Object>;
+}
+
+
+const {posts} = Astro.props
+console.log(posts)
+---
+<!-- Contenido de HTML -->
+<div class="swiper-container" id="swiperContainer">
+    <astro-greet data-posts={JSON.stringify(posts)}>
+        <button>¡Saluda!</button>
+      </astro-greet>
+    <div class="swiper-wrapper" id="swiperWrapper" data-posts={posts}>
+        <img id="imagenn" src="">
+    </div>
+    <button id="prevBtn">Anterior</button>
+    <button id="nextBtn">Siguiente</button> 
+  </div>
+
+
+  <script>
+
+
+    const urlParts = window.location.href.split('/');
+    console.log(urlParts[urlParts.length-1])
+    const name=urlParts[urlParts.length-1]
+    
+    
+    let imagesArray: string[] = [];
+    
+    class AstroGreet extends HTMLElement {
+        constructor() {
+          super();
+    
+    
+          const Allposts = JSON.parse(this.dataset.posts || '[]');
+    
+            console.log(Allposts)
+            console.log("name: "+name)
+            const currentPost: any | undefined = Allposts.find((post: any) => post.frontmatter.name === name);
+        
+            imagesArray=currentPost.frontmatter.imagenes
+    
+            console.log(imagesArray)
+
+        }
+        
+      }
+      customElements.define('astro-greet', AstroGreet);
+
+
+    let currentIndex: number = 0;
+
+
+    function generateSlide(index: number): void {
+  console.log("index2 " + index);
+  const imagenn: HTMLImageElement | null = document.getElementById("imagenn") as HTMLImageElement;
+
+  if (imagenn) {
+    imagenn.src = `../../projects/${name}/${imagesArray[index]}`;
+    imagenn.alt = "Imagen";
+
+    console.log("este " + imagenn.src);
+  }
+}
+    
+    function showSlide(index: number): void {
+      const slideImg: HTMLImageElement | null = document.querySelector('.swiper-slide img');
+      const wrapper: HTMLElement | null = document.querySelector('.swiper-wrapper');
+    
+      if (slideImg && wrapper) {
+        const slideWidth: number = slideImg.offsetWidth || 0;
+        const newPosition: number = -index * slideWidth;
+        wrapper.style.transform = `translateX(${newPosition}px)`;
+        currentIndex = index;
+      }
+    }
+
+    function prevSlide(): void {
+      currentIndex = (currentIndex - 1 + imagesArray.length) % imagesArray.length;
+      generateSlide(currentIndex);
+      showSlide(currentIndex);
+
+    }
+    
+    function nextSlide(): void {
+      currentIndex = (currentIndex + 1) % imagesArray.length;
+      generateSlide(currentIndex);
+      showSlide(currentIndex);
+
+    }
+    
+    // Obtener botones y agregar escuchadores de eventos
+    const prevBtn: HTMLButtonElement | null = document.querySelector('#prevBtn');
+    const nextBtn: HTMLButtonElement | null = document.querySelector('#nextBtn');
+    
+    if (prevBtn && nextBtn) {
+      prevBtn.addEventListener('click', prevSlide);
+      nextBtn.addEventListener('click', nextSlide);
+    }
+    
+    // Generar la primera slide al cargar la página
+    window.onload = function () {
+      generateSlide(currentIndex);
+    };
+
+      </script>
+    
+    
+    
+    
+    
+  <style>
+    /* Contenido de CSS */
+    .swiper-container {
+      width: 100%;
+      height: 200px;
+      overflow: hidden;
+      position: relative;
+    }
+  
+    .swiper-wrapper {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+  
+    .swiper-slide {
+      min-width: 100%;
+      box-sizing: border-box;
+    }
+  
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  
+    button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 10px;
+      font-size: 18px;
+      cursor: pointer;
+      background-color: #3498db;
+      color: #fff;
+      border: none;
+    }
+  
+    #prevBtn {
+      left: 10px;
+    }
+  
+    #nextBtn {
+      right: 10px;
+    }
+  </style>
+  

@@ -5,6 +5,8 @@ import '../styles/global.css'
 import MySwiper from '../components/MySwiper';
 import ProjectButton from '../components/ProjectButton.astro';
 import TitleComponent from '../components/TitleComponent';
+import Swiper from '../components/Swiper.astro';
+import CardComponent from '../components/CardComponent.astro';
 interface Props {
     title: string;
 }
@@ -43,9 +45,10 @@ console.log("Nombre:", name);
         <name class="[grid-area:name] bg-white flex justify-center">
             <TitleComponent posts={allPosts} client:only/>
         </name>
-        <left class="[grid-area:left] bg-white  flex flex-col justify-center self-center ">
-            <div class="max-h-[100vh] max-w-[100vw] overflow-hidden">
-            <MySwiper posts={allPosts} client:only/>
+        <left id="left" class="[grid-area:left] bg-white  flex flex-col justify-center self-center ">
+            <div id="swiper-container" class=" overflow-hidden">
+            <!-- <MySwiper posts={allPosts} client:only/> -->
+            <Swiper posts={allPosts} client:load/>
             </div>
         </left>
             
@@ -105,6 +108,14 @@ h1{
     font-family:  'Atkinson', sans-serif;
     font-weight: bold;
     font-size: 12px;
+}
+#left{
+    height: 100%;
+}
+
+#swiper-container{
+    height: 100%;
+
 }
     </style>
 </body>
