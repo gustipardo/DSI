@@ -14,7 +14,13 @@ console.log(posts)
         <img id="imagenn" src="">
     </div>
   </astro-greet>
-    <button id="prevBtn">Anterior</button>
+  <a class="flex justify-center self-center" href="http://localhost:4321/projects/Barrio_Walsh">
+    <img id="prevBtn" src="/assets/arrow.png"/>
+</a>
+
+
+
+<button id="prevBtn"/>
     <button id="nextBtn">Siguiente</button> 
   </div>
 
@@ -112,10 +118,15 @@ console.log(posts)
     
     
   <style>
+
+    #prevBtn{
+      height: 120px;
+      z-index: 10;
+    }
     /* Contenido de CSS */
     .swiper-container {
       width: 100%;
-
+      z-index: 1;
       overflow: hidden;
       position: relative;
     }
