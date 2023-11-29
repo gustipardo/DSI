@@ -10,11 +10,10 @@ console.log(posts)
 <!-- Contenido de HTML -->
 <div class="swiper-container" id="swiperContainer">
     <astro-greet data-posts={JSON.stringify(posts)}>
-        <button>¡Saluda!</button>
-      </astro-greet>
-    <div class="swiper-wrapper" id="swiperWrapper" data-posts={posts}>
+    <div class="swiper-wrapper" id="swiperWrapper">
         <img id="imagenn" src="">
     </div>
+  </astro-greet>
     <button id="prevBtn">Anterior</button>
     <button id="nextBtn">Siguiente</button> 
   </div>
@@ -116,7 +115,7 @@ console.log(posts)
     /* Contenido de CSS */
     .swiper-container {
       width: 100%;
-      height: 200px;
+
       overflow: hidden;
       position: relative;
     }
@@ -155,6 +154,10 @@ console.log(posts)
   
     #nextBtn {
       right: 10px;
+    }
+
+    #imagenn{
+      height: 700px;
     }
   </style>
   
