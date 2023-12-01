@@ -2,6 +2,7 @@
 import Card from '../components/Card.astro'
 import Layout from '../Layout/Layout.astro'
 import GoogleMap from '../components/GoogleMap.jsx'
+import type { loadApp } from 'astro/app/node';
 const numeroAleatorio = Math.floor(Math.random() * 5) + 1;
 console.log(numeroAleatorio)
 
@@ -38,7 +39,7 @@ console.log(numeroAleatorio)
             image="../../assets/topo.svg" 
             services={["Especialización en movimientos de suelo para preparar terrenos destinados a rutas, caminos, asfalto u hormigón, con enfoque particular en obras civiles.","Relevamientos plani-altimétricos.", "Estudio de Cuencas Hídricas.", "Cálculo y Ejecución de Mov. De Suelo.", "Acondicionamiento de Suelos para Grandes Estructuras."]}/>
            
-            <Card title="CONSTRUCCIÓN DE GRANDES ESTRUCTURAS" 
+            <Card  title="CONSTRUCCIÓN DE GRANDES ESTRUCTURAS" 
             image="../../assets/grua.svg" services={["Realización de entoscados, bases para tanques industriales, calles, veredas, cordones, zanjeos para acueductos, playones y playas de estacionamiento. Ofrecemos también servicios completos de alumbrado público.","Fundaciones de Hormigón Armado.", "Estructuras Metálicas y de Hormigón.", "Mampostería, cerramientos.", "Construcción en seco.", "Pintura y revestimientos.", "Instalaciones Sanitarias, Eléctricas, Redes de datos, Refrigeración, detección y Extinción de Incendios."]} />
             
             <br>

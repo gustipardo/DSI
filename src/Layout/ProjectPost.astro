@@ -2,7 +2,7 @@
 import Navigation from '../components/Navigation.astro'
 import { ViewTransitions } from 'astro:transitions';
 import '../styles/global.css'
-import MySwiper from '../components/MySwiper';
+import MySwiper from '../components/MySwiper.jsx';
 import ProjectButton from '../components/ProjectButton.astro';
 import TitleComponent from '../components/TitleComponent';
 import SwiperComponentA from '../components/SwiperComponentA.astro';
@@ -12,9 +12,6 @@ interface Props {
 const { title } = Astro.props;
 const allPosts = await Astro.glob("../pages/projects/*.md");
 const currentPath = Astro.url.pathname;
-    
-
-
 const currentProject = allPosts.find(post => post.url === currentPath);
 
 const imagenes = currentProject?.frontmatter.imagenes;
@@ -46,10 +43,8 @@ console.log("Nombre:", name);
         </name>
         <left id="left" class="[grid-area:left] bg-white  flex flex-col justify-center self-center ">
             <div id="swiper-container" class=" overflow-hidden">
-            <!-- <MySwiper posts={allPosts} client:only/> -->
-            <SwiperComponentA
-            
-          posts={allPosts}/>
+            <MySwiper posts={allPosts} client:only/>
+            <!-- <SwiperComponentA posts={allPosts}/> -->
 
             </div>
         </left>

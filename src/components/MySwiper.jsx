@@ -1,39 +1,49 @@
+import { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import '../styles/swiperComponent.css'
-export default function ImageSlider({ posts}) {
+import '../styles/swiperComponent.css';
 
+export default function ImageSlider({ posts }) {
   const urlParts = window.location.href.split('/');
+  const name = urlParts[urlParts.length - 1];
+  const props = posts.find((prop) => prop.frontmatter.name === name);
 
-  console.log(urlParts[urlParts.length-1])
-  const name=urlParts[urlParts.length-1]
-console.log(posts)
-  const props = posts.find(prop => prop.frontmatter.name === name);
-  console.log(props)
+  const imagesArray = props.frontmatter.imagenes;
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    generateSlide();
+  }, [currentIndex]);
+
+  function generateSlide() {
+    const imagenn = document.getElementById('imagenn');
+    if (imagenn) {
+      imagenn.src = `../../projects/${name}/${imagesArray[currentIndex]}`;
+      imagenn.alt = 'Imagen';
+    }
+  }
+
+  function prevSlide() {
+    const newIndex = (currentIndex - 1 + imagesArray.length) % imagesArray.length;
+    setCurrentIndex(newIndex);
+  }
+
+  function nextSlide() {
+    const newIndex = (currentIndex + 1) % imagesArray.length;
+    setCurrentIndex(newIndex);
+  }
+
   return (
-    <div style={{
-      height: '50vh',
-      width: window.innerWidth < 800 ? '90vw' : '50vw',
-      transition: 'width 0.5s',  // Agregado para una transición suave del ancho
-    }}>
-      <Swiper
-        className='bg-white max-h[500px]'
-        spaceBetween={50}
-        slidesPerView={1}
-        onSlideChange={() => console.log('slide change')}
-        onSwiper={(swiper) => console.log(swiper)}
-      >
-        {props.frontmatter.imagenes.map((image, index) => (
-          <SwiperSlide key={index}>
-            <img
-              className='Swiper-image'
-              src={`/projects/${props.frontmatter.name}/${image}`}
-              alt={`Image ${index + 1}`}
-
-            />
-          </SwiperSlide>
-        ))}
-      </Swiper>
+    <div className="swiper-container" id="swiperContainer">
+      <div className="swiper-wrapper" id="swiperWrapper">
+        <img id="imagenn" src="" alt="Imagen" />
+      </div>
+      <button id="prevBtn" onClick={prevSlide}>
+        Anterior
+      </button>
+      <button id="nextBtn" onClick={nextSlide}>
+        Siguiente
+      </button>
     </div>
   );
 }
