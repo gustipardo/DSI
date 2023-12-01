@@ -5,17 +5,19 @@ interface Props {
     services: Array<string>;
     posts: Array<Object>;
 }
-const {posts} = Astro.props
-console.log(posts)
-const {title} = Astro.props
-const {image} = Astro.props
-const {services} = Astro.props
+const {posts} = Astro.props;
+console.log(posts);
+const {title} = Astro.props;
+const {image} = Astro.props;
+const {services} = Astro.props;
+const poststring = JSON.stringify(posts);
+console.log(poststring);
 ---
 
 
 
 <div class="swiper-container" id="swiperContainer">
-    <astro-greet >
+    <astro-greet data-posts={poststring}>
     <div class="swiper-wrapper" id="swiperWrapper">
         <img id="imagenn" src="">
     </div>
