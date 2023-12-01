@@ -47,9 +47,12 @@ console.log("Nombre:", name);
         <left id="left" class="[grid-area:left] bg-white  flex flex-col justify-center self-center ">
             <div id="swiper-container" class=" overflow-hidden">
             <!-- <MySwiper posts={allPosts} client:only/> -->
-            <SwiperComponentA title="Infraestructura para Plantas de Tratamiento:" 
+            <SwiperComponentA
+            
+            title="Infraestructura para Plantas de Tratamiento:" 
             image="../../assets/pipe.svg" 
-            services={["Construcción de bases para cavas de bombeo y otros elementos necesarios para el tratamiento de efluentes y líquidos lixiviados."]}/>
+            services={["Construcción de bases para cavas de bombeo y otros elementos necesarios para el tratamiento de efluentes y líquidos lixiviados."]}
+            posts={allPosts}/>
 
             </div>
         </left>
