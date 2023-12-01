@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import '../styles/swiperComponent.css';
-
 export default function ImageSlider({ posts }) {
   const urlParts = window.location.href.split('/');
   const name = urlParts[urlParts.length - 1];
@@ -38,11 +37,11 @@ export default function ImageSlider({ posts }) {
       <div className="swiper-wrapper" id="swiperWrapper">
         <img className='Swiper-image' id="imagenn" src="" alt="Imagen" />
       </div>
-      <button id="prevBtn" onClick={prevSlide} className="arrow-button prev ">
-      <div className="arrow"></div>
+      <button id="prevBtn" onClick={prevSlide} className="arrow-button prev">
+        <img src="/assets/arrow.svg" className='w-8 sm:w-16'/>
       </button>
-      <button id="nextBtn" onClick={nextSlide} className="arrow-button next ">
-      <div className="arrow"></div>
+      <button id="nextBtn" onClick={nextSlide} className="arrow-button next">
+      <img src="/assets/arrow.svg" className='w-8 sm:w-16'/>
       </button>
       
     </div>
