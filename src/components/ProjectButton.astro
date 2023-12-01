@@ -9,21 +9,17 @@ const allPosts = await Astro.glob("../pages/projects/*.md");
 const projects = allPosts.map(post => post.frontmatter.name);
 const currentPath = Astro.url.pathname.split('/');;
 const currentProject = currentPath[currentPath.length - 1];
-console.log(projects)
 
-console.log(currentProject)
 
 const index = projects.indexOf(projects.find((project) => project === currentProject));
 const Alenght = projects.length
-console.log(index)
 
 const newURL = isRight ? (index + 1) % Alenght : (index - 1 + Alenght) % Alenght;
 
-console.log(newURL)
 ---
 
 
-<a class="flex justify-center self-center" href=`${projects[newURL]}`>
+<a class="flex justify-center self-center" href={projects[newURL]}>
     <img src="/assets/arrow.png" class:list={[
         "h-12" ,
         {"rotate-180":isRight}]}/>
