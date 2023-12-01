@@ -1,12 +1,38 @@
 ---
-
-
+interface Props {
+    title: string;
+    image: string;
+    services: Array<string>;
+}
+const {title} = Astro.props
+const {image} = Astro.props
+const {services} = Astro.props
 ---
 
+<div class="py-2 border border-gray-400  lg:border-t lg:border-gray-400 max-w-sm w-full lg:max-w-full lg:flex">
+    <img id="svg" class="h-full lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden py-2 pl-2 ml-4"
+        title="Image" src={image}/>
 
-    <button id="nextBtn">Siguiente</button> 
+    <div class=" bg-white rounded-b lg:rounded-b-none lg:rounded-r p-8 flex flex-col justify-between leading-normal">
+        <div class="mb-8 text-left">
+            <h1 class="font-bold text-2xl text-black">{title}</h1>
+            <ul class="text-gray-700 text-base">
+                {services.map((service, index) => (
+                    <li>- {service}</li>
+                ))}
+            </ul>
+        </div>
+    </div>
+</div>
+<style>
+    @media screen and (max-width: 1022px) {
+  #svg{
+    padding: 20px;
+    width: 260px;
+    margin: auto;
+}
+    }
 
 
-
-
-    
+  
+</style>

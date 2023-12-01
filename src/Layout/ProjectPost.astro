@@ -5,6 +5,7 @@ import '../styles/global.css'
 import MySwiper from '../components/MySwiper';
 import ProjectButton from '../components/ProjectButton.astro';
 import TitleComponent from '../components/TitleComponent';
+import Card from '../components/SwiperComponentA.astro';
 interface Props {
     title: string;
 }
@@ -46,6 +47,10 @@ console.log("Nombre:", name);
         <left id="left" class="[grid-area:left] bg-white  flex flex-col justify-center self-center ">
             <div id="swiper-container" class=" overflow-hidden">
             <!-- <MySwiper posts={allPosts} client:only/> -->
+            <Card title="Infraestructura para Plantas de Tratamiento:" 
+            image="../../assets/pipe.svg" 
+            services={["Construcción de bases para cavas de bombeo y otros elementos necesarios para el tratamiento de efluentes y líquidos lixiviados."]}/>
+
             </div>
         </left>
             
