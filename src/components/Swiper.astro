@@ -1,10 +1,45 @@
 ---
+interface Props {
+    posts: Array<Object>;
+}
 
 
-const posts = "assd";
+const posts = [
+  {
+    frontmatter: {
+      title: 'Movimiento de suelo',
+      ubicacion: 'Almirante Brown',
+      imagenes: [
+        'Almirante_Brown (1).jpeg', 'Almirante_Brown (2).jpeg', 'Almirante_Brown (3).jpeg',
+        'Almirante_Brown (4).jpeg', 'Almirante_Brown (5).jpeg'
+      ],
+      order: 1,
+      layout: '../../Layout/ProjectPost.astro',
+      name: 'Almirante_Brown'
+    },
+    file: 'C:/Users/Admin/Desktop/DSI Portfolio/Portfolio/DSI/src/pages/projects/Almirante_Brown.md',
+    url: '/projects/Almirante_Brown',
+  },
+  {
+    frontmatter: {
+      title: 'Barrio Walsh',
+      ubicacion: 'González Catán',
+      imagenes: [
+        'Barrio_Walsh.jpeg', 'Barrio_Walsh (1).JPG', 'Barrio_Walsh (2).JPG', 'Barrio_Walsh (3).JPG',
+        'Barrio_Walsh (4).JPG', 'Barrio_Walsh (1).JPG'
+      ],
+      order: 1,
+      layout: '../../Layout/ProjectPost.astro',
+      name: 'Barrio_Walsh'
+    },
+    file: 'C:/Users/Admin/Desktop/DSI Portfolio/Portfolio/DSI/src/pages/projects/Barrio_Walsh.md',
+    url: '/projects/Barrio_Walsh',
+  }
+];
+
 console.log(posts)
 ---
-<!-- Contenido de HTML -->
+
 <div class="swiper-container" id="swiperContainer">
     <astro-greet data-posts={JSON.stringify(posts)}>
     <div class="swiper-wrapper" id="swiperWrapper">
@@ -22,8 +57,7 @@ console.log(posts)
   </div>
 
 
-  <script>
-
+<script>
 
     const urlParts = window.location.href.split('/');
     console.log(urlParts[urlParts.length-1])
