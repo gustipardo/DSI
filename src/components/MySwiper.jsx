@@ -1,10 +1,6 @@
 import { useState, useEffect } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import '../styles/swiperComponent.css';
-import ArrowIcon from '../../public/assets/arrow.svg'
-
-
 
 export default function ImageSlider({ posts }) {
   const urlParts = window.location.href.split('/');
@@ -36,18 +32,36 @@ export default function ImageSlider({ posts }) {
     setCurrentIndex(newIndex);
   }
 
+  function handleImageClick(event) {
+    const image = document.getElementById('imagenn');
+    const imageRect = image.getBoundingClientRect();
+    const clickX = event.clientX - imageRect.left;
+    const imageCenter = imageRect.width / 2;
+
+    if (clickX < imageCenter) {
+      // Clic en la mitad izquierda de la imagen
+      prevSlide();
+    } else {
+      // Clic en la mitad derecha de la imagen
+      nextSlide();
+    }
+  }
+
   return (
-    <div className="swiper-container" id="swiperContainer">
+    <div
+      className="swiper-container"
+      id="swiperContainer"
+      onClick={handleImageClick}
+    >
       <div className="swiper-wrapper" id="swiperWrapper">
         <img className='Swiper-image' id="imagenn" src="" alt="Imagen" />
       </div>
       <button id="prevBtn" onClick={prevSlide} className="arrow-button prev">
-        <img src="/assets/arrow.svg" className='w-8 sm:w-16'/>
+        <img src="/assets/arrow.png" className='w-4 sm:w-8 rotate-90'/>
       </button>
       <button id="nextBtn" onClick={nextSlide} className="arrow-button next">
-      <img src="/assets/arrow.svg" className='w-8 sm:w-16'/>
+        <img src="/assets/arrow.png" className='w-4 sm:w-8 rotate-90'/>
       </button>
-      
     </div>
   );
 }
