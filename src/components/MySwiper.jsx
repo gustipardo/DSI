@@ -2,6 +2,10 @@ import { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import '../styles/swiperComponent.css';
+import ArrowIcon from '../../public/assets/arrow.svg'
+
+
+
 export default function ImageSlider({ posts }) {
   const urlParts = window.location.href.split('/');
   const name = urlParts[urlParts.length - 1];

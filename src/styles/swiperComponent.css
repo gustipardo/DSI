@@ -1,5 +1,7 @@
 
-
+*:hover{
+  background-color: none;
+}
 
 .Swiper-image, .swiper-wrapper, .swiper-container {
     height: 100%;
@@ -35,3 +37,15 @@
     right: 0;
     transform: rotate(90deg);
   }  
+
+  @media (max-width: 800px) {
+    .arrow-button {
+    width: 44px;
+    }
+    
+  }
+
+.swiper-wrapper *:active {
+  outline: none;
+  background-color: transparent;
+}
