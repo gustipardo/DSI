@@ -7,4 +7,11 @@ layout: '../../Layout/ProjectPost.astro'
 name: 'Parque_Solar_Fotovoltaico'
 ---
 
-Esta entrada 
+**OBRA FINALIZADA**
+
+Construcción del Parque  Solar Fotovoltáico “El
+Dorado”.
+
+Colocación de 24 módulos fotovoltaicos 600 watts
+
+Capacidad total del parque de 144 kw
