@@ -32,6 +32,7 @@ console.log(poststring);
     <button id="nextBtn">Siguiente</button> 
   </div>
   <script>
+    let currentIndex: number = 0;
 
 
     const urlParts = window.location.href.split('/');
@@ -53,20 +54,20 @@ console.log(poststring);
             const currentPost: any | undefined = Allposts.find((post: any) => post.frontmatter.name === name);
         
             imagesArray=currentPost.frontmatter.imagenes
-    
+            generateSlide(currentIndex)
+            console.log("Window holaaaaaaaaaaaaaaaaa")
             console.log(imagesArray)
-
         }
         
       }
       customElements.define('astro-greet', AstroGreet);
 
 
-    let currentIndex: number = 0;
 
 
     function generateSlide(index: number): void {
-  console.log("index2 " + index);
+
+  console.log("generateSlide Idex " + index);
   const imagenn: HTMLImageElement | null = document.getElementById("imagenn") as HTMLImageElement;
 
   if (imagenn) {
@@ -114,11 +115,7 @@ console.log(poststring);
       console.log("prev");
     }
     
-    // Generar la primera slide al cargar la página
-    window.onload = function () {
-      generateSlide(currentIndex);
-      console.log("Window hola")
-    };
+
 
       </script>
   <style>
