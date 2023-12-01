@@ -1,5 +1,12 @@
 h1{
     font-family:  'Atkinson', sans-serif;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 48px;
+}
+
+
+@media (max-width: 800px) {
+h1{
+font-size: 28px;
+}
 }

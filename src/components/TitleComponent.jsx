@@ -11,7 +11,7 @@ export default function Title({ posts}) {
   const Title = props.frontmatter.title
   console.log("title "+Title)
   return (
-  <h1 className="py-2 text-5xl text-black text-center flex justify-center self-center">
+  <h1 className="py-2 text-black text-center flex justify-center self-center">
   {Title}
 </h1>
   );
