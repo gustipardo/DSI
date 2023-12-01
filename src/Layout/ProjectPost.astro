@@ -3,7 +3,7 @@ import Navigation from '../components/Navigation.astro'
 import { ViewTransitions } from 'astro:transitions';
 import '../styles/global.css'
 import MySwiper from '../components/MySwiper.jsx';
-import ProjectButton from '../components/ProjectButton.astro';
+import ProjectButton from '../components/ProjectButton.jsx';
 import TitleComponent from '../components/TitleComponent';
 interface Props {
     title: string;
@@ -51,9 +51,9 @@ console.log("Nombre:", name);
             <slot/> 
         </detailsProject>
         <logo id="logo" class="[grid-area:logo] h-full bg-white ] flex justify-center  py-4 ">
-            <ProjectButton isRight={false}/>
+            <ProjectButton posts={allPosts} isRight={false} client:only/>
             <a href="/" class="flex justify-center self-center mx-4"><img class="w-full" src="/assets/logo.svg"/></a>
-            <ProjectButton isRight={true}/>
+            <ProjectButton posts={allPosts} isRight={true} client:only/>
         </logo>
     </div>
 </div>
