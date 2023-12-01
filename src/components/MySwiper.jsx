@@ -38,12 +38,13 @@ export default function ImageSlider({ posts }) {
       <div className="swiper-wrapper" id="swiperWrapper">
         <img className='Swiper-image' id="imagenn" src="" alt="Imagen" />
       </div>
-      <button id="prevBtn" onClick={prevSlide} className="arrow-button prev">
-        <img src="/assets/arrow.png" className='w-8'/>
+      <button id="prevBtn" onClick={prevSlide} className="arrow-button prev ">
+      <div className="arrow"></div>
       </button>
-      <button id="nextBtn" onClick={nextSlide} className="arrow-button next">
-      <img src="/assets/arrow.png" className='w-8 rotate-180'/>
+      <button id="nextBtn" onClick={nextSlide} className="arrow-button next ">
+      <div className="arrow"></div>
       </button>
+      
     </div>
   );
 }
