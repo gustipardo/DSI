@@ -100,6 +100,7 @@ console.log(poststring);
       currentIndex = (currentIndex + 1) % imagesArray.length;
       generateSlide(currentIndex);
       showSlide(currentIndex);
+      console.log("next");
 
     }
     
@@ -110,6 +111,7 @@ console.log(poststring);
     if (prevBtn && nextBtn) {
       prevBtn.addEventListener('click', prevSlide);
       nextBtn.addEventListener('click', nextSlide);
+      console.log("prev");
     }
     
     // Generar la primera slide al cargar la página
