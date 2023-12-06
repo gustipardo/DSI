@@ -7,8 +7,8 @@ layout: '../../Layout/ProjectPost.astro'
 name: 'Panorama_Office_I_y_II'
 ---
 
-#### **OBRA FINALIZADA**
-##### Edificio de Oficinas de PB + 4 Pisos.
+##### **OBRA FINALIZADA**
+###### Edificio de Oficinas de PB + 4 Pisos.
 
 El edificio comprende planta baja con locales comerciales y hall de acceso a oficinas en doble altura, cuatro plantas con oficinas y azotea técnica en el último nivel.
 

@@ -7,7 +7,7 @@ layout: '../../Layout/ProjectPost.astro'
 name: 'Remodelacion_Estacion_de_Servicio_AXION'
 ---
 
-#### **OBRA FINALIZADA**
+##### **OBRA FINALIZADA**
 
 **PLANTA BAJA**:
 Remodelación, ampliación, minimercado y núcleos públicos, sanitarios,  servicios.

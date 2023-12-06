@@ -8,7 +8,7 @@ name: 'Platea_de_hormigon_120_Viviendas'
 ---
 ##### **OBRA EN EJECUCIÓN**
 
-##### Obra Almirante Brown 120 viviendas:
+###### Obra Almirante Brown 120 viviendas:
 - Movimiento de suelo
 - Estructura de hormigón armado
 - Revoques y revestimientos

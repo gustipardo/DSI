@@ -7,9 +7,9 @@ layout: '../../Layout/ProjectPost.astro'
 name: 'San_Diego'
 ---
 
-#### **OBRA FINALIZADA**
+##### **OBRA FINALIZADA**
 
-##### Construcción de Casa Familiar con Chimenea
+###### Construcción de Casa Familiar con Chimenea
 
  Estructura de la Casa:
 

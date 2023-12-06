@@ -6,9 +6,9 @@ order: 25
 layout: '../../Layout/ProjectPost.astro'
 name: 'Barrio_Walsh'
 ---
-#### **OBRA EN EJECUCIÓN**
+##### **OBRA EN EJECUCIÓN**
 
-#####  Construccion y reparacion de viviendas 
+###### Construccion y reparacion de viviendas 
 **Ubicación:** Gonzalez Catán
 
 **Realizado**:

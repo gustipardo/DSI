@@ -7,7 +7,7 @@ layout: '../../Layout/ProjectPost.astro'
 name: 'Parque_Industrial'
 ---
 
-#### **OBRA FINALIZADA**
+##### **OBRA FINALIZADA**
 **INFRAESTRUCTURA**
 
 **SE REALIZÓ**:

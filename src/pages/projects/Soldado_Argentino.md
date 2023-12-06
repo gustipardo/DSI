@@ -7,9 +7,9 @@ layout: '../../Layout/ProjectPost.astro'
 name: 'Soldado_Argentino'
 ---
 
-#### **OBRA FINALIZADA**
+##### **OBRA FINALIZADA**
 
-##### Edificio Comercial PB y EP de 300 m² + 200 m² de Oficinas en Planta Baja.
+###### Edificio Comercial PB y EP de 300 m² + 200 m² de Oficinas en Planta Baja.
 
 **Ubicación**:
 Cosquín 850 - Ituzaingó

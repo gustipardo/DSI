@@ -6,9 +6,9 @@ order: 99
 layout: '../../Layout/ProjectPost.astro'
 name: 'TGBT_UF44'
 ---
-#### **OBRA FINALIZADA**
+##### **OBRA FINALIZADA**
 
-##### BETA SUELAS
+###### BETA SUELAS
 
 Ejecución:
 2018

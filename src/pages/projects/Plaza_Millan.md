@@ -6,17 +6,15 @@ order: 10
 layout: '../../Layout/ProjectPost.astro'
 name: 'Plaza_Millan'
 ---
+##### **OBRA FINALIZADA**
+**Mejoras Realizadas**:
 
-#### **OBRA FINALIZADA**
+**Veredas:** Extensión significativa de veredas.
 
-Mejoras Realizadas:
+**Alumbrado Público:** Modernización con la instalación de nuevas luminarias.
 
-- **Veredas:** Extensión significativa de veredas.
+**Pavimentación:** Pavimentación de una importante sección de la calle Luján, con incorporación de cordón integral.
 
-- **Alumbrado Público:** Modernización con la instalación de nuevas luminarias.
+**Áreas Específicas:** Creación de zonas dedicadas para juegos y diversas actividades.
 
-- **Pavimentación:** Pavimentación de una importante sección de la calle Luján, con incorporación de cordón integral.
-
-- **Áreas Específicas:** Creación de zonas dedicadas para juegos y diversas actividades.
-
-- **Veredas y Solados Aeróbicos:** Ampliación de las veredas y la introducción de solados aeróbicos.
+**Veredas y Solados Aeróbicos:** Ampliación de las veredas y la introducción de solados aeróbicos.

@@ -8,21 +8,21 @@ name: 'Montes_de_OCA'
 ---
 ##### **OBRA FINALIZADA**
 
-##### Restauración de la Torre Cuadrada
+###### Restauración de la Torre Cuadrada
 
 **Plazo de Ejecución:** 80 días hábiles
 
 Trabajos Realizados:
 
-- **Trabajos Preliminares**
+**Trabajos Preliminares**
   
-- **Control de Calidad y Ensayos de Materiales**
+**Control de Calidad y Ensayos de Materiales**
 
-- **Restauración:**
+**Restauración:**
   - Fachada
   - Balcones
   - Escalera Metálica
   - Impermeabilización de Terraza
   - Pintura
 
-- **Vereda Perimetral**
+**Vereda Perimetral**

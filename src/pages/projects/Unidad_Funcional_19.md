@@ -6,7 +6,7 @@ order: 25
 layout: '../../Layout/ProjectPost.astro'
 name: 'Unidad_Funcional_19'
 ---
-#### **OBRA FINALIZADA**
+##### **OBRA FINALIZADA**
 
 Depósito de 1945 m² + Oficinas de 234 m².
 

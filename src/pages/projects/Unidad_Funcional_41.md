@@ -6,7 +6,7 @@ order: 15
 layout: '../../Layout/ProjectPost.astro'
 name: 'Unidad_Funcional_41'
 ---
-#### **OBRA FINALIZADA**
+##### **OBRA FINALIZADA**
 
 Depósito de 1965 m² + Oficinas de 360 m²
 Proyecto y dirección:  Arquitecto Tomás Maza

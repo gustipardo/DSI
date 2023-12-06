@@ -6,9 +6,9 @@ order: 100
 layout: '../../Layout/ProjectPost.astro'
 name: 'Planta_de_Tratamiento_de_Basura'
 ---
-#### **OBRA FINALIZADA**
+##### **OBRA FINALIZADA**
 
-##### Instalación Eléctrica Integral
+###### Instalación Eléctrica Integral
 
 **Ubicación:** La Matanza
 (CARE AMBIENTAL)

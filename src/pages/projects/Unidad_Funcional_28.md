@@ -6,7 +6,7 @@ order: 25
 layout: '../../Layout/ProjectPost.astro'
 name: 'Unidad_Funcional_28'
 ---
-**OBRA FINALIZADA**
+##### **OBRA FINALIZADA**
 
 Depósito de 2520 m² + Oficinas de 145 m².
 Proyecto y dirección:  Arquitecto Tomás Maza

@@ -7,9 +7,9 @@ layout: '../../Layout/ProjectPost.astro'
 name: 'POLO_OESTE_Edificio_de_Oficinas'
 ---
 
-#### **OBRA FINALIZADA**
+##### **OBRA FINALIZADA**
 
-##### EDIFICIO DE OFICINAS  PLANTA BAJA COMERCIAL Y 4 PISOS DE OFICINAS
+###### EDIFICIO DE OFICINAS  PLANTA BAJA COMERCIAL Y 4 PISOS DE OFICINAS
 
 Inicio de ejecución:  2017
 Proyecto y dirección:  Arquitecto Tomás Maza

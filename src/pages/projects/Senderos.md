@@ -6,7 +6,7 @@ order: 3
 layout: '../../Layout/ProjectPost.astro'
 name: 'Senderos'
 ---
-#### **OBRAS FINALIZADAS**
+##### **OBRAS FINALIZADAS**
 
 40.000 m2 de Senderos de hormigón armado sobre ramblas, veredas y espacios verdes.
 

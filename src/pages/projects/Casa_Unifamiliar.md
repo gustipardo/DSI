@@ -7,21 +7,21 @@ layout: '../../Layout/ProjectPost.astro'
 name: 'Casa_Unifamiliar'
 ---
 
-#### **OBRA FINALIZADA**
+##### **OBRA FINALIZADA**
 
-##### Detalles de la Obra:
+###### Detalles de la Obra:
 
-- **Cimentación:**
+**Cimentación:**
   - Excavación y colocación de cimientos de concreto.
 
-- **Estructura:**
+**Estructura:**
   - Columnas, vigas y losa de entrepiso para soporte de techos y balcones.
 
-- **Revestimientos Exteriores:**
+**Revestimientos Exteriores:**
   - Aplicación de revestimientos para protección y estética en fachadas.
 
-- **Revestimientos Interiores:**
+**Revestimientos Interiores:**
   - Colocación de revestimientos en paredes internas y acabados decorativos.
 
-- **Terminaciones de Calidad:**
+**Terminaciones de Calidad:**
   - Acabados finos en concreto para estética y durabilidad, con inspección para eliminar imperfecciones.

@@ -7,9 +7,9 @@ layout: '../../Layout/ProjectPost.astro'
 name: 'Parque_Solar_Fotovoltaico'
 ---
 
-#### **OBRA FINALIZADA**
+##### **OBRA FINALIZADA**
 
-#### Construcción del Parque  Solar Fotovoltáico “El Dorado”.
+###### Construcción del Parque  Solar Fotovoltáico “El Dorado”.
 
 Colocación de 24 módulos fotovoltaicos 600 watts
 

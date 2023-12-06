@@ -26,22 +26,20 @@ order: 15
 layout: '../../Layout/ProjectPost.astro'
 name: 'Maquinaria'
 ---
-#### **Maquinaria Pesada:**
-
-- **Retroexcavadoras:**
+##### **Maquinaria Pesada:**
+**Retroexcavadoras:**
   - SANY
   - SINOMACH
   - HYUNDAI
   - CAT 312D
-
-- **Tractor Massey Ferguson:**
+**Tractor Massey Ferguson:**
   - Modelo Advanced 292
   - Año 2006
 
-- **Batan de Gasoil:**
+**Batan de Gasoil:**
   - Capacidad: 1500 litros
 
-- **Equipos Adicionales:**
+**Equipos Adicionales:**
   - Moto Compresor
   - Aplanadora
   - Cargadora Frontal
@@ -52,7 +50,7 @@ name: 'Maquinaria'
   - Motoniveladora
   - Mini Cargadora (Daewo 440)
 
-- **Vehículos de Transporte:**
+**Vehículos de Transporte:**
   - 4 Camiones Volcadores
   - Camión Ford F14000 HD
   - Camionetas

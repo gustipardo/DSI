@@ -7,8 +7,8 @@ layout: '../../Layout/ProjectPost.astro'
 name: 'JARDIN_903_VIVORATA'
 ---
 
-#### **OBRA EN EJECUCIÓN**
-##### Avanzada JARDIN 903 VIVORATÁ
+##### **OBRA EN EJECUCIÓN**
+###### Avanzada JARDIN 903 VIVORATÁ
 **Ubicación**: Calle El Campamento entre Los Naranjos y La Armonía.
 **Superficie**: 510.04 m2 cubiertos, 241.71 m2 semicubiertos.
 
