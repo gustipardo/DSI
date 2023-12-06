@@ -7,7 +7,8 @@ layout: '../../Layout/ProjectPost.astro'
 name: 'Plaza_Millan'
 ---
 
-**OBRA FINALIZADA**
+#### **OBRA FINALIZADA**
+
 Mejoras Realizadas:
 
 - **Veredas:** Extensión significativa de veredas.

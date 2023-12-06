@@ -26,7 +26,7 @@ order: 15
 layout: '../../Layout/ProjectPost.astro'
 name: 'Maquinaria'
 ---
-**Maquinaria Pesada:**
+#### **Maquinaria Pesada:**
 
 - **Retroexcavadoras:**
   - SANY

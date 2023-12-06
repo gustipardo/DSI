@@ -9,18 +9,15 @@ name: 'Unidad_Funcional_28'
 **OBRA FINALIZADA**
 
 Depósito de 2520 m² + Oficinas de 145 m².
+Proyecto y dirección:  Arquitecto Tomás Maza
+Año de ejecución:  2016
 
- Proyecto y dirección:  Arquitecto Tomás Maza
-
- Año de ejecución:  2016
-
-SE REALIZÓ:
-Movimiento de suelo.
-Fundaciones.
-Ventilaciones y portones.
-Muro perimetral de blo-
-ques de hormigón.
-Estructura de hormigón.
-Armado de oﬁcinas, alba-  ñilería, instalaciones y ter-  minaciones.
-Instalación eléctrica en  depósito y oﬁcinas.
+**SE REALIZÓ**:
+- Movimiento de suelo
+- Fundaciones
+- Ventilaciones y portones
+- Muro perimetral de bloques de hormigón
+- Estructura de hormigón
+- Armado de oﬁcinas, albañilería, instalaciones y terminaciones
+- Instalación eléctrica en depósito y oﬁcinas
 

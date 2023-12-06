@@ -7,20 +7,11 @@ layout: '../../Layout/ProjectPost.astro'
 name: 'Panorama_Office_I_y_II'
 ---
 
-**OBRA FINALIZADA**
-**INFRAESTRUCTURA**
+#### **OBRA FINALIZADA**
+##### Edificio de Oficinas de PB + 4 Pisos.
 
-SE REALIZÓ:
-Relevamiento topográfico.
-Desmonte.
-Movimiento de suelo.
-Red pluvial.
-Delimitación de lotes.
+El edificio comprende planta baja con locales comerciales y hall de acceso a oficinas en doble altura, cuatro plantas con oficinas y azotea técnica en el último nivel.
 
-Banda forestal.
-Cierre perimetral.
-
-Construcción de camino ribera desde empalme en la colectora norte del acceso oeste hasta el acceso al parque.
-
-Construcción de 250mts de red cloacal sobre la calle martín de Gainza para empalmar a la red interna existente.
-Equipamiento y puesta en funcionamiento de la cámara de bombeo de líquidos cloacales.
+**SE REALIZÓ**:
+- Se entregaron terminadas las áreas comunes y los núcleos sanitarios de oficinas.
+- Las oficinas con carpeta terminación de piso.

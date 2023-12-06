@@ -6,24 +6,17 @@ order: 16
 layout: '../../Layout/ProjectPost.astro'
 name: 'Unidad_Funcional_11'
 ---
-**OBRA FINALIZADA**
+#### **OBRA FINALIZADA**
 
-Depósito de 1945 m² + Oficinas de 234 m².
+Depósito de 2840 m² + Oficinas de 300 m².
 
-ESTRUCTURAS METÁLICAS:  GALPONES Y TINGLADOS
+Proyecto y dirección:  Arquitecto Tomás Maza
+Fecha de inicio:  Enero 2015
+Fecha de ﬁnalización:  Octubre 2015
 
- Proyecto y dirección:  Arquitecto Tomás Maza
-
- Fecha de inicio:
-Mayo 2014
-
- Fecha de ﬁnalización:  Diciembre 2014
-
-SE REALIZÓ:
- Movimiento de suelo.
- Fundaciones.
- Ventilaciones y portones.
- Muro perimetral de blo-
-ques de hormigón.
- Oﬁcinas, albañilería.
- Instalaciones y terminacio-  nes.
+**SE REALIZÓ**:
+- Movimiento del suelo.
+- Fundaciones de depósito,  muro perimetral de bloques  de hormigón.
+- Estructura de hormigón,  armado, albañilería, instala-  ciones y terminaciones de  oﬁcinas.
+- Pisos de hormigón, ventila-  ciones y portones.
+- Instalaciones eléctricas de  depósito.

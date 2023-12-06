@@ -7,9 +7,9 @@ layout: '../../Layout/ProjectPost.astro'
 name: 'Casa_Unifamiliar'
 ---
 
-**OBRA FINALIZADA**
+#### **OBRA FINALIZADA**
 
-Detalles de la Obra:
+##### Detalles de la Obra:
 
 - **Cimentación:**
   - Excavación y colocación de cimientos de concreto.

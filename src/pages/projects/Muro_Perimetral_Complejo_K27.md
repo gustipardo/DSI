@@ -7,16 +7,16 @@ layout: '../../Layout/ProjectPost.astro'
 name: 'Muro_Perimetral_Complejo_K27'
 ---
 
-**OBRA FINALIZADA**
+#### **OBRA FINALIZADA**
 
-Muro Perimetral
+##### Muro Perimetral
 
-Ubicación:
+**Ubicación**:
 José María Paz entre Tranca  y Echenagucía - Ituzaingó
 
 Proyecto y dirección:  Arquitecto Tomás Maza
 
-SE REALIZÓ:
+**SE REALIZÓ**:
 Fundaciones.
 Muro perimetral 405 mts.
 Construcción de estructura  de hormigón.

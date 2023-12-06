@@ -7,9 +7,9 @@ layout: '../../Layout/ProjectPost.astro'
 name: 'Primavera_1'
 ---
 
-**OBRA FINALIZADA**
+#### **OBRA FINALIZADA**
 
-Mejoras Realizadas:
+**Mejoras Realizadas**:
 
 - **Veredas:** 4542 m² de veredas ejecutadas.
 

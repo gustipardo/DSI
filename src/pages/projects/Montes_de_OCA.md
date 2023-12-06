@@ -6,9 +6,9 @@ order: 3
 layout: '../../Layout/ProjectPost.astro'
 name: 'Montes_de_OCA'
 ---
-**OBRA FINALIZADA**
+##### **OBRA FINALIZADA**
 
-Restauración de la Torre Cuadrada
+##### Restauración de la Torre Cuadrada
 
 **Plazo de Ejecución:** 80 días hábiles
 

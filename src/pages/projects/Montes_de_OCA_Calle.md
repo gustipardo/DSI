@@ -6,11 +6,11 @@ order: 15
 layout: '../../Layout/ProjectPost.astro'
 name: 'Montes_de_OCA_Calle'
 ---
-**OBRA FINALIZADA**
-**Apertura de Calles:**
+#### **OBRA FINALIZADA**
+##### **Apertura de Calles:**
 - 1065 metros lineales de calle.
 
-Trabajos Realizados:
+###### Trabajos Realizados:
 
 - **Cerco de Obra**
 - **Cerramientos Provisorios y Vallados de Protección**

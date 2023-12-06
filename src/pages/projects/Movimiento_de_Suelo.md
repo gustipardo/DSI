@@ -6,9 +6,9 @@ order: 11
 layout: '../../Layout/ProjectPost.astro'
 name: 'Movimiento_de_Suelo'
 ---
-**OBRA EN EJECUCIÓN**
+#### **OBRA EN EJECUCIÓN**
 
-Movimiento de suelos
+##### Movimiento de suelos
 
 Utilizando maquinaria especializada, como excavadoras y retroexcavadoras, 
 se remueve, transporta y compacta el suelo para adecuar el terreno según las especificaciones del proyecto.

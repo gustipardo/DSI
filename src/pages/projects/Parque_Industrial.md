@@ -7,17 +7,16 @@ layout: '../../Layout/ProjectPost.astro'
 name: 'Parque_Industrial'
 ---
 
-**OBRA FINALIZADA**
+#### **OBRA FINALIZADA**
 **INFRAESTRUCTURA**
 
-SE REALIZÓ:
-Relevamiento topográfico.
-Desmonte.
-Movimiento de suelo.
-Red pluvial.
-Delimitación de lotes.
-
-Banda forestal.
+**SE REALIZÓ**:
+- Relevamiento topográfico
+- Desmonte
+- Movimiento de suelo
+- Red pluvial
+- Delimitación de lotes
+- Banda forestal.
 Cierre perimetral.
 
 Construcción de camino ribera desde empalme en la colectora norte del acceso oeste hasta el acceso al parque.

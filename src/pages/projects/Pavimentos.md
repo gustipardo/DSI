@@ -7,9 +7,9 @@ layout: '../../Layout/ProjectPost.astro'
 name: 'Pavimentos'
 ---
 
-**OBRAS FINALIZADAS**
+#### **OBRAS FINALIZADAS**
 
-PAVIMENTOS REALIZADOS EN:
+**PAVIMENTOS REALIZADOS EN**:
 - Navarro:
   677 m lineales pavimento de hormigón.
   4739 m2

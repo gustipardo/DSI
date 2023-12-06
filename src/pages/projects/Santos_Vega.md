@@ -7,9 +7,9 @@ layout: '../../Layout/ProjectPost.astro'
 name: 'Santos_Vega'
 ---
 
-**OBRA EN EJECUCIÓN**
+#### **OBRA EN EJECUCIÓN**
 
-Continuación del **PROGRAMA RECONSTRUIR**
+##### Continuación del **PROGRAMA RECONSTRUIR**
 
 **Ubicación:** Barrio Santos Vega
 

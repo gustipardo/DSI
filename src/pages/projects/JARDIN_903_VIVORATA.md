@@ -7,17 +7,17 @@ layout: '../../Layout/ProjectPost.astro'
 name: 'JARDIN_903_VIVORATA'
 ---
 
-#### **Obra en ejecución**
+#### **OBRA EN EJECUCIÓN**
 ##### Avanzada JARDIN 903 VIVORATÁ
-Ubicación: Calle El Campamento entre Los Naranjos y La Armonía.
-Superficie: 510.04 m2 cubiertos, 241.71 m2 semicubiertos.
+**Ubicación**: Calle El Campamento entre Los Naranjos y La Armonía.
+**Superficie**: 510.04 m2 cubiertos, 241.71 m2 semicubiertos.
 
-Distribución:
+**Distribución**:
 - 3 aulas
 - Salón de usos múltiples
 - Comedor y cocina
 - Área administrativa y de apoyo    
-Estructura:
+**Estructura**:
 Construcción tradicional racionalizada:
 Hormigón armado a la vista
 Ladrillos huecos cerámicos revocados

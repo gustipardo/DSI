@@ -6,23 +6,13 @@ order: 25
 layout: '../../Layout/ProjectPost.astro'
 name: 'Barrio_Walsh'
 ---
-**Obra en ejecución**
+#### **OBRA EN EJECUCIÓN**
 
-Construccion y reparacion de viviendas 
-ubicadas en Gonzalez Catán.
+#####  Construccion y reparacion de viviendas 
+**Ubicación:** Gonzalez Catán
 
-#### Realizado:
-+ Reparacion de tejado
-+ Pintado
-+ Instalacion Electrica
-+ Instalacion Fluvial
-
-
-
-## Título
-### Subtítulo
-Este es un ejemplo de texto que da entrada a 
-una lista genérica de elementos:
-- Elemento 1
-- Elemento 2
-- Elemento 3
+**Realizado**:
+- Reparacion de tejado
+- Pintado
+- Instalacion Electrica
+- Instalacion Fluvial
