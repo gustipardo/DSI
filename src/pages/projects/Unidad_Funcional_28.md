@@ -1,6 +1,6 @@
 ---
 title: 'Unidad Funcional 28'
-ubicacion: ''
+ubicacion: '...'
 imagenes: [Imagen10.jpg,Imagen11.jpg,Imagen12.jpg,Imagen13.jpg,Imagen14.jpg]
 order: 25
 layout: '../../Layout/ProjectPost.astro'

@@ -1,6 +1,6 @@
 ---
 title: 'Remodelación Estación de Servicio AXIÓN'
-ubicacion: ''
+ubicacion: '...'
 imagenes: ['Imagen37.jpg','Imagen38.jpg','Imagen39.jpg','Imagen40.jpg','Imagen41.jpg']
 order: 19
 layout: '../../Layout/ProjectPost.astro'

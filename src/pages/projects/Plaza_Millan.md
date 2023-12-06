@@ -1,6 +1,6 @@
 ---
 title: 'Plaza Millan'
-ubicacion: 
+ubicacion: '...'
 imagenes: ['Imagen32.jpg','Imagen33.jpg','Imagen34.jpg','Imagen35.jpg','Imagen36.jpg','Imagen37.jpg','Imagen38.jpg']
 order: 10
 layout: '../../Layout/ProjectPost.astro'

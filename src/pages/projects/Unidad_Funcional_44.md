@@ -1,6 +1,6 @@
 ---
 title: 'Unidad Funcional 44'
-ubicacion: ''
+ubicacion: '...'
 imagenes: [Imagen19.jpg,Imagen20.jpg,Imagen21.jpg,Imagen22.png]
 order: 9
 layout: '../../Layout/ProjectPost.astro'

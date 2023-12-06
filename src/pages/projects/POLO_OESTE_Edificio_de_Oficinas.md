@@ -1,6 +1,6 @@
 ---
 title: 'POLO OESTE - Edificio de Oficinas'
-ubicacion: ''
+ubicacion: '...'
 imagenes: ['Imagen32.jpg','Imagen33.jpg','Imagen34.jpg','Imagen35.jpg','Imagen36.jpg']
 order: 10
 layout: '../../Layout/ProjectPost.astro'

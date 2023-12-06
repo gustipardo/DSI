@@ -1,6 +1,6 @@
 ---
 title: 'Unidad Funcional 19'
-ubicacion: ''
+ubicacion: '...'
 imagenes: [Imagen7.jpg,Imagen8.jpg,Imagen9.jpg]
 order: 25
 layout: '../../Layout/ProjectPost.astro'
