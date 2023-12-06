@@ -1,3 +1,4 @@
+
 /*
   The CSS in this style tag is based off of Bear Blog's default CSS.
   https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
@@ -31,7 +32,7 @@
 	font-style: normal;
 	font-display: swap;
 }
-body {
+/* body {
 	font-family:  sans-serif;
 	margin: 0;
 	padding: 0;
@@ -49,7 +50,7 @@ main {
 	max-width: calc(100% - 2em);
 	margin: auto;
 	padding: 3em 1em;
-}
+} */
 h1,
 h2,
 h3,
