@@ -4,7 +4,7 @@ ubicacion: 'Moreno'
 imagenes: ['img1.jpg','img2.jpg','img3.jpg','img4.jpg','img5.jpg','img6.jpg','img7.jpg','img8.jpg']
 order: 1
 layout: '../../Layout/ProjectPost.astro'
-name: 'Parque_Industrial_Buen_Ayre_1'
+name: 'Parque_Industrial'
 ---
 
 **OBRA FINALIZADA**

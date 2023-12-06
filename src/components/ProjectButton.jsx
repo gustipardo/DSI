@@ -12,7 +12,6 @@ export default function ImageSlider({ isRight, posts }) {
   const Alenght = projects.length;
 
   const newURL = isRight ? (index + 1) % Alenght : (index - 1 + Alenght) % Alenght;
-
   return (
     <a
       className={`flex justify-center self-center ${
