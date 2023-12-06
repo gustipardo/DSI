@@ -10,8 +10,8 @@ console.log(numeroAleatorio)
 ---
 <Layout title='DSI Constructora'>
     <section id="nosotros">
-      <div class="bg-image bg-no-repeat"
-     style=`background-image: url('../../assets/Front-page/1.jpg'); background-size: cover; background-position: center; height: 100vh;`>
+      <div id="frontpage" class="bg-image bg-no-repeat"
+     style=`background-image: url('../../assets/Front-page/1.jpg'); background-size: cover; height: 100vh;`>
 
  
      <div class="text-white text-center pt-60">
@@ -91,10 +91,14 @@ html{
 #contacto{
 height: 70vh;
 }
+#frontpage{
+  background-position: center;
+}
 @media screen and (max-width: 1020px) {
   #contacto{
 height: 100vh;
 }
+
   }
 
 #servicios-container{
@@ -109,7 +113,9 @@ height: 100vh;
   padding: 16px;
   margin-top: 20px;
 }
-
+#frontpage{
+  background-position-x: 25%;
+}
   }
 
 #title, #subtitle{
