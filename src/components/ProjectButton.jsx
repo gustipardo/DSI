@@ -2,7 +2,10 @@ import 'swiper/css';
 import '../styles/swiperComponent.css';
 
 export default function ImageSlider({ isRight, posts }) {
-  const projects = posts.map((post) => post.frontmatter.name);
+  const sortedPosts = posts.sort((a, b) => a.frontmatter.order - b.frontmatter.order);
+
+  const projects = sortedPosts.map((post) => post.frontmatter.name);
+
   const currentPath = window.location.href.split('/');
   const currentProject = currentPath[currentPath.length - 1];
 
