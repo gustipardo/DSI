@@ -2,7 +2,7 @@
 title: 'Barrio Walsh'
 ubicacion: 'González Catán'
 imagenes: ['Barrio_Walsh.jpeg','Barrio_Walsh (1).JPG','Barrio_Walsh (2).JPG','Barrio_Walsh (3).JPG','Barrio_Walsh (4).JPG','Barrio_Walsh (1).JPG',]
-order: 1
+order: 25
 layout: '../../Layout/ProjectPost.astro'
 name: 'Barrio_Walsh'
 ---

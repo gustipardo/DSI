@@ -2,7 +2,7 @@
 title: 'San Diego'
 ubicacion: 'Lujan'
 imagenes: ['Imagen55.jpg','Imagen56.jpg','Imagen57.jpg','Imagen58.jpg']
-order: 6
+order: 14
 layout: '../../Layout/ProjectPost.astro'
 name: 'San_Diego'
 ---

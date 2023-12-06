@@ -1,8 +1,8 @@
 ---
 title: 'Movimiento de Suelo'
 ubicacion: 'Almirante Brown'
-imagenes: ['Imagen50.jpg','Imagen51.jpg','Imagen52.jpg','Imagen53.jpg','Imagen54.jpg','Imagen55.jpg']
-order: 1
+imagenes: ['Imagen50.jpg','Imagen51.jpg','Imagen52.jpg','Imagen53.jpg','Imagen54.jpg','Imagen55.jpg',Almirante_Brown (1).jpeg,Almirante_Brown (2).jpeg,Almirante_Brown (3).jpeg,Almirante_Brown (4).jpeg,Almirante_Brown (5).jpeg]
+order: 11
 layout: '../../Layout/ProjectPost.astro'
 name: 'Movimiento_de_Suelo'
 ---

@@ -2,7 +2,7 @@
 title: 'Comarca de Lujan'
 ubicacion: 'Lujan'
 imagenes: ['Imagen53.jpg','Imagen54.jpg']
-order: 6
+order: 18
 layout: '../../Layout/ProjectPost.astro'
 name: 'Comarca_de_Lujan'
 ---

@@ -2,7 +2,7 @@
 title: 'Platea de hormigon 120 Viviendas'
 ubicacion: 'Almirante Brown'
 imagenes: ['Imagen56.jpg','Imagen57.jpg','Imagen58.jpg']
-order: 1
+order: 98
 layout: '../../Layout/ProjectPost.astro'
 name: 'Platea_de_hormigon_120_Viviendas'
 ---

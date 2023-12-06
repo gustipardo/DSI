@@ -1,36 +1,31 @@
 ---
 import Layout from '../Layout/Layout.astro';
-import MySwiper from '../components/MySwiper';
-import Project from '../components/Project.astro'
+import Project from '../components/Project.astro';
 
 const allPosts = await Astro.glob("../pages/projects/*.md");
-console.log(allPosts)
+
+// Ordenar los proyectos según el atributo 'order'
+const sortedPosts = allPosts.sort((a, b) => a.frontmatter.order - b.frontmatter.order);
 
 const currentPath = Astro.url.pathname;
-    
-
-
-const currentProject = allPosts.find(post => post.url === currentPath);
+const currentProject = sortedPosts.find(post => post.url === currentPath);
 
 const imagenes = currentProject?.frontmatter.imagenes;
 const project = currentProject;
 const name = currentProject?.frontmatter.name;
 const ProjectTitle = currentProject?.frontmatter.title;
-console.log("Imágenes:", allPosts);
-console.log("Imágenes:", currentPath);
-console.log("Imágenes:", imagenes);
-console.log("Nombre:", project);
----
 
+---
 <Layout title='DSI Constructora'>
     <div class="flex flex-wrap justify-around pt-8">
-        {allPosts.map((post) => <Project
-        url={post.url}
-        title={post.frontmatter.title}
-        ubication={post.frontmatter.ubicacion}
-        image={post.frontmatter.imagenes[0]}
-        name={post.frontmatter.name}/>)}
+        {sortedPosts.map((post) => (
+            <Project
+                url={post.url}
+                title={post.frontmatter.title}
+                ubication={post.frontmatter.ubicacion}
+                image={post.frontmatter.imagenes[0]}
+                name={post.frontmatter.name}
+            />
+        ))}
     </div>
 </Layout>
-
-

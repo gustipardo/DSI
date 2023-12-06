@@ -2,7 +2,7 @@
 title: 'Soldado Argentino'
 ubicacion: 'Ituzaingó'
 imagenes: ['Soldado_Argentino.jpg','Imagen23.jpg','Imagen24.jpg','Imagen25.jpg','Imagen26.jpg']
-order: 3
+order: 12
 layout: '../../Layout/ProjectPost.astro'
 name: 'Soldado_Argentino'
 ---

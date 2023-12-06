@@ -2,7 +2,7 @@
 title: 'Muro Perimetral Complejo K27'
 ubicacion: ''
 imagenes: ['Imagen27.jpg','Imagen28.jpg','Imagen29.jpg','Imagen30.jpg']
-order: 7
+order: 13
 layout: '../../Layout/ProjectPost.astro'
 name: 'Muro_Perimetral_Complejo_K27'
 ---

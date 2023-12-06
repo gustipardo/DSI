@@ -2,7 +2,7 @@
 title: 'Planta de Tratamiento de Basura'
 ubicacion: ''
 imagenes: ['Imagen42.jpg','Imagen43.jpg','Imagen44.jpg','Imagen45.jpg',]
-order: 1
+order: 100
 layout: '../../Layout/ProjectPost.astro'
 name: 'Planta_de_Tratamiento_de_Basura'
 ---

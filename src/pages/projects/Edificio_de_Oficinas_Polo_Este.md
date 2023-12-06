@@ -2,7 +2,7 @@
 title: 'Edificio de Oficinas Polo Este'
 ubicacion: 'Moron'
 imagenes: ['Edificio_de_Oficinas_Polo_Este.jpg']
-order: 8
+order: 1
 layout: '../../Layout/ProjectPost.astro'
 name: 'Edificio_de_Oficinas_Polo_Este'
 ---

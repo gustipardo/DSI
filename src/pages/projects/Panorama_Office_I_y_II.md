@@ -2,7 +2,7 @@
 title: 'Panorama Office I y II'
 ubicacion: 'Moreno'
 imagenes: [Imagen1.jpg, Imagen2.jpg]
-order: 1
+order: 4
 layout: '../../Layout/ProjectPost.astro'
 name: 'Panorama_Office_I_y_II'
 ---
