@@ -1,10 +1,10 @@
 ---
-title: 'Parque Industrial Buen Ayre I'
+title: 'Panorama Office I y II'
 ubicacion: 'Moreno'
-imagenes: [PARQUE INDUSTRIAL_BUEN_AYRE_1 (1).jpg, PARQUE INDUSTRIAL_BUEN_AYRE_1 (2).jpg,PARQUE INDUSTRIAL_BUEN_AYRE_1 (3).jpg,PARQUE INDUSTRIAL_BUEN_AYRE_1 (4).jpg,PARQUE INDUSTRIAL_BUEN_AYRE_1 (5).jpg, PARQUE INDUSTRIAL_BUEN_AYRE_1 (6).jpg,PARQUE INDUSTRIAL_BUEN_AYRE_1 (7).jpg,PARQUE INDUSTRIAL_BUEN_AYRE_1 (8).jpg]
+imagenes: [Imagen1.jpg, Imagen2.jpg]
 order: 1
 layout: '../../Layout/ProjectPost.astro'
-name: 'Parque_Industrial_Buen_Ayre_1'
+name: 'Panorama_Office_I_y_II'
 ---
 
 **OBRA FINALIZADA**

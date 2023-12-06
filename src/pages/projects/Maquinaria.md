@@ -1,5 +1,5 @@
 ---
-title: 'Maquinaria'
+title: 'Maquinaria y equipo'
 ubicacion: 'Almirante Brown'
 imagenes: [
   "Imagen2.jpg",
@@ -26,13 +26,33 @@ order: 1
 layout: '../../Layout/ProjectPost.astro'
 name: 'Maquinaria'
 ---
-**Obra en ejecución**
+**Maquinaria Pesada:**
 
+- **Retroexcavadoras:**
+  - SANY
+  - SINOMACH
+  - HYUNDAI
+  - CAT 312D
 
-## Título
-### Subtítulo
-Este es un ejemplo de texto que da entrada a 
-una lista genérica de elementos:
-- Elemento 1
-- Elemento 2
-- Elemento 3
+- **Tractor Massey Ferguson:**
+  - Modelo Advanced 292
+  - Año 2006
+
+- **Batan de Gasoil:**
+  - Capacidad: 1500 litros
+
+- **Equipos Adicionales:**
+  - Moto Compresor
+  - Aplanadora
+  - Cargadora Frontal
+  - Niveladora de Arrastre
+  - Retropalas (Caterpillar 416D)
+  - Batan Grosspal
+  - Tijera Genie 2646
+  - Motoniveladora
+  - Mini Cargadora (Daewo 440)
+
+- **Vehículos de Transporte:**
+  - 4 Camiones Volcadores
+  - Camión Ford F14000 HD
+  - Camionetas
