@@ -2,7 +2,7 @@
 title: 'Pavimentos'
 ubicacion: 'Navarro, Primavera y mas'
 imagenes: ['Imagen1.jpg','Imagen2.jpg','Imagen3.jpg','Imagen4.jpg','Imagen5.jpg','Imagen6.jpg','Imagen7.jpg','Imagen8.jpg','Imagen9.jpg','Imagen10.jpg','Imagen11.jpg','Imagen12.jpg']
-order: 1
+order: 18
 layout: '../../Layout/ProjectPost.astro'
 name: 'Pavimentos'
 ---

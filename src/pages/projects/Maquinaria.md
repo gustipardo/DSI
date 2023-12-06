@@ -22,7 +22,7 @@ imagenes: [
   "Imagen19.jpg",
   "Imagen20.jpg"
 ]
-order: 1
+order: 15
 layout: '../../Layout/ProjectPost.astro'
 name: 'Maquinaria'
 ---

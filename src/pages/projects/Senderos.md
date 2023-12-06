@@ -2,7 +2,7 @@
 title: 'Senderos'
 ubicacion: 'La Plata'
 imagenes: ['Imagen13.jpg','Imagen14.jpg','Imagen15.jpg','Imagen16.jpg','Imagen17.jpg','Imagen18.jpg',]
-order: 1
+order: 3
 layout: '../../Layout/ProjectPost.astro'
 name: 'Senderos'
 ---

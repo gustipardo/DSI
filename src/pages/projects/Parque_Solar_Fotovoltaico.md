@@ -2,7 +2,7 @@
 title: 'Parque Solar Fotovoltaico'
 ubicacion: 'El Dorado'
 imagenes: ['Imagen28.jpg','Imagen31.jpg','parque_solar_fotovoltaico.jpg','Imagen30.jpg','Imagen29.jpg','Imagen27.jpg','Imagen26.jpg','Imagen25.jpg','Imagen24.jpg']
-order: 2
+order: 3
 layout: '../../Layout/ProjectPost.astro'
 name: 'Parque_Solar_Fotovoltaico'
 ---
