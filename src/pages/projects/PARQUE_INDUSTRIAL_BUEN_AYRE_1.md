@@ -1,7 +1,7 @@
 ---
 title: 'Parque Industrial Buen Ayre I'
 ubicacion: 'Moreno'
-imagenes: [PARQUE INDUSTRIAL_BUEN_AYRE_1 (1).jpg, PARQUE INDUSTRIAL_BUEN_AYRE_1 (2).jpg,PARQUE INDUSTRIAL_BUEN_AYRE_1 (3).jpg,PARQUE INDUSTRIAL_BUEN_AYRE_1 (4).jpg,PARQUE INDUSTRIAL_BUEN_AYRE_1 (5).jpg, PARQUE INDUSTRIAL_BUEN_AYRE_1 (6).jpg,PARQUE INDUSTRIAL_BUEN_AYRE_1 (7).jpg,PARQUE INDUSTRIAL_BUEN_AYRE_1 (8).jpg]
+imagenes: ['img1.jpg','img2.jpg','img3.jpg','img4.jpg','img5.jpg','img6.jpg','img7.jpg','img8.jpg']
 order: 1
 layout: '../../Layout/ProjectPost.astro'
 name: 'Parque_Industrial_Buen_Ayre_1'
