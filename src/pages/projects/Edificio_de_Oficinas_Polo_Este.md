@@ -11,11 +11,7 @@ name: 'Edificio_de_Oficinas_Polo_Este'
 
 Construccion y reparacion de viviendas ubicadas en Gonzalez Catán.
 
-### Realizado:
-+ Reparacion de tejado
-+ Pintado
-+ Instalacion Electrica
-+ Instalacion Fluvial
+El edificio comprende planta baja con locales comerciales y hall de acceso a oficinas en doble altura, cuatro plantas con oficinas y azotea técnica en el último nivel.
 
-# asdasdsd
+
 
