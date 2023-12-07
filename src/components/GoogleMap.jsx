@@ -1,9 +1,9 @@
 import React from "react";
 import GoogleMapReact from 'google-map-react';
-import '.././styles/Googlemap.css'
-const AnyReactComponent = ({ text }) => <img className="image" src="../../assets/w-pin.png"/>;
+import '.././styles/Googlemap.css';
+const AnyReactComponent = ({ text }) => <img className="image" src="../../assets/w-pin.png" />;
 
-export default function SimpleMap(){
+export default function SimpleMap() {
   const defaultProps = {
     center: {
       lat: -34.61965,
@@ -12,11 +12,11 @@ export default function SimpleMap(){
     zoom: 17
   };
 
+
   return (
-    // Important! Always set the container height explicitly
     <div className="map-container pb-4">
       <GoogleMapReact
-        bootstrapURLKeys={{ key: "" }}
+        bootstrapURLKeys={{ key: "AIzaSyBnTIjTl4hPpLD8H79yTAdLZQo9f-CfHmI" }}
         defaultCenter={defaultProps.center}
         defaultZoom={defaultProps.zoom}
       >
