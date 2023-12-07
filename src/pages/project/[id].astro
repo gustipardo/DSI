@@ -1,0 +1,23 @@
+---
+import Layout from '../../Layout/Layout.astro'
+const { id } = Astro.params
+
+console.log(id)
+
+const allPosts = await Astro.glob("../projects/*.md");
+
+console.log("Imágenes:", allPosts);
+
+export async function getStaticPaths() {
+
+    return allPosts.map((project)=>({
+    params: {id: project.frontmatter.name},
+    }))
+}
+---
+
+<Layout title='DSI Constructora'>
+<h1>Hopolapa</h1>
+<p>saDasdasdsd</p>
+
+</Layout>
