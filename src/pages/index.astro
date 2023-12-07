@@ -76,15 +76,77 @@ console.log(numeroAleatorio)
           </div>
       </div>
 
-        <GoogleMap client:load/>
-
-
+        <!-- <GoogleMap client:load/> -->
+        <div class="map-container">
+          <a href="https://www.google.com.ar/maps/place/DSI+Constructora/@-34.6202341,-58.7269514,17z/data=!3m1!4b1!4m6!3m5!1s0x95bcbe3c98e55af5:0x86a176d86e15454b!8m2!3d-34.6202385!4d-58.7243765!16s%2Fg%2F11f4qrwkcz?entry=ttu">
+            <img id="map" class="draggable" src="../../assets/map.jpg" />
+            <img id="marker" class="draggable" src="../../assets/w-pin.png" />
+          </a>
+        </div>
     </section>
 
     
 </Layout>
 
 <style>
+.map-container {
+  position: relative;
+  height: 80%;
+  width: 50vw; /* Ancho del 100% */
+
+  @media screen and (max-width: 1020px) {
+    width: 90vw;
+  }
+}
+
+#map-wrapper {
+  position: relative;
+  height: 100%; /* Ajustar el alto al 100% del contenedor */
+  width: 100%; /* Ajustar el ancho al 100% del contenedor */
+}
+
+#map {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; /* Evitar que la imagen se estire */
+}
+
+#marker {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  transform-origin: 50% 100%;
+  animation: moveUpDown 0.5s infinite alternate ease-in-out;
+  cursor: grab;
+}
+
+.draggable {
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+}
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Estilos específicos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  #map-container, #map-wrapper {
+    height: 100vh; /* 100% de la altura de la ventana en dispositivos móviles */
+  }
+} 
+
+
 html{
   scroll-behavior: smooth;
 }
