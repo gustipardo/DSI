@@ -1,5 +1,5 @@
 ---
-title: 'Barrio Walsh'
+title: 'Terminación de viviendas Barrio Walsh'
 ubicacion: 'González Catán'
 imagenes: ['Barrio_Walsh.jpeg','Barrio_Walsh (1).JPG','Barrio_Walsh (2).JPG','Barrio_Walsh (3).JPG','Barrio_Walsh (4).JPG','Barrio_Walsh (1).JPG',]
 order: 25

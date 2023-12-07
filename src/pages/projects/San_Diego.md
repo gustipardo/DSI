@@ -1,6 +1,6 @@
 ---
 title: 'San Diego'
-ubicacion: 'Lujan'
+ubicacion: 'San Fransisco Alvarez Moreno'
 imagenes: ['Imagen55.jpg','Imagen56.jpg','Imagen57.jpg','Imagen58.jpg']
 order: 14
 layout: '../../Layout/ProjectPost.astro'

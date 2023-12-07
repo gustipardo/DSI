@@ -1,6 +1,6 @@
 ---
 title: 'Unidad Funcional 41'
-ubicacion: '...'
+ubicacion: 'Piba 1'
 imagenes: [Imagen16.jpg,Imagen15.jpg,Imagen17.jpg,Imagen18.jpg]
 order: 15
 layout: '../../Layout/ProjectPost.astro'

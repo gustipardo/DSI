@@ -6,7 +6,7 @@ order: 5
 layout: '../../Layout/ProjectPost.astro'
 name: 'Wilde_Motor_One'
 ---
-
+##### **OBRA EN EJECUCIÓN**
 1. **Cimentación:** Preparación del terreno y cimientos de concreto.
 2. **Estructura de Paredes:** Construcción sólida de concreto.
 3. **Diseño de Galpón:** Planificación para techo de chapa y paredes de concreto.

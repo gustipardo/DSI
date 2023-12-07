@@ -1,6 +1,6 @@
 ---
-title: 'Jardin 903 Vivoreta'
-ubicacion: 'Moron'
+title: 'Vivoreta'
+ubicacion: 'Mar chiquita'
 imagenes: ['JARDIN(3).jpeg','JARDIN(5).jpeg','JARDIN(10).jpeg','JARDIN(11).jpeg','JARDIN(13).jpeg','JARDIN(14).jpeg','JARDIN(15).jpeg']
 order: 5
 layout: '../../Layout/ProjectPost.astro'

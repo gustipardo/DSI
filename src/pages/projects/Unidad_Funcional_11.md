@@ -1,6 +1,6 @@
 ---
 title: 'Unidad Funcional 11'
-ubicacion: '...'
+ubicacion: 'Piba 1'
 imagenes: [Imagen3.jpg,Imagen4.jpg,Imagen5.jpg]
 order: 16
 layout: '../../Layout/ProjectPost.astro'
