@@ -22,9 +22,9 @@ console.log(featuredPosts)
     </div>
   
     </section>
-    <section id="destacados">
+    <section class="bg-white" id="destacados">
       <h2 class="text-black text-4xl font-semibold block p-10 text-center">Proyectos destacados:</h2>
-      <div class="flex flex-wrap justify-center mx-auto w-9/12">
+      <div class="flex flex-wrap justify-center mx-auto w-9/12 ">
         {featuredPosts.map((post) => (
           <Project
             url={post.url}
@@ -39,7 +39,7 @@ console.log(featuredPosts)
     
     <section id="servicios" class="h-full pt-0">
       
-        <div id="servicios-container" class="h-full bg-white text-black p-8 mx-2 border-b-4 border-black pt-0">
+        <div id="servicios-container" class="mt-4 h-full bg-white text-black p-8 mx-2 border-b-4 border-black pt-0">
             <h2 class="text-3xl font-bold text-black">Nuestros Servicios</h2>
             <p class="text-lg mt-4">Somos una empresa especializada en construcción e infraestructuras, con un equipo capacitado y maquinaria propia para garantizar resultados de calidad.<br> Especializados en:</p>
             <Card title="Obras de Medio Ambiente:" 
@@ -214,7 +214,5 @@ height: 100vh;
 #subtitle{
   font-size: 26px;
 }
-body{
-  background-color: white;
-}
+
 </style>
