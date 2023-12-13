@@ -76,7 +76,7 @@ import Layout from '../Layout/Layout.astro'
         <!-- <GoogleMap client:load/> -->
         <div class="map-container">
           <a aria-label="Donde nos encontramos" href="https://www.google.com.ar/maps/place/DSI+Constructora/@-34.6202341,-58.7269514,17z/data=!3m1!4b1!4m6!3m5!1s0x95bcbe3c98e55af5:0x86a176d86e15454b!8m2!3d-34.6202385!4d-58.7243765!16s%2Fg%2F11f4qrwkcz?entry=ttu">
-            <img id="map" class="draggable" src="../../assets/map.jpg" alt="map"/>
+            <img id="map" class="draggable" src="../../assets/map.webp" alt="map"/>
             <img id="marker" class="draggable" src="../../assets/w-pin.png" alt="marker"/>
             
           </a>
@@ -107,6 +107,7 @@ import Layout from '../Layout/Layout.astro'
   height: 100%;
   width: 100%;
   object-fit: cover; /* Evitar que la imagen se estire */
+  border: black 1px solid;
 }
 
 #marker {
