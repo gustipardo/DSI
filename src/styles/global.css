@@ -100,7 +100,7 @@ img {
 }
 code {
 	padding: 2px 5px;
-	background-color: rgb(var(--gray-light));
+	/* background-color: rgb(var(--gray-light)); */
 	border-radius: 2px;
 }
 pre {
@@ -145,4 +145,8 @@ hr {
 	clip-path: inset(50%);
 	/* added line to stop words getting smushed together (as they go onto seperate lines and some screen readers do not understand line feeds as a space */
 	white-space: nowrap;
+}
+
+body{
+	background-color: white;
 }
