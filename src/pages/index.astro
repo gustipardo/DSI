@@ -23,8 +23,8 @@ console.log(featuredPosts)
   
     </section>
     <section class="bg-white" id="destacados">
-      <h2 class="text-black text-4xl font-semibold block p-10 text-center">Proyectos destacados:</h2>
-      <div class="flex flex-wrap justify-center mx-auto w-9/12 ">
+      <h2 class=" text-black text-4xl font-semibold block pt-10 text-center">Proyectos destacados:</h2>
+      <div class="project-container flex flex-wrap justify-center mx-auto w-9/12 ">
         {featuredPosts.map((post) => (
           <Project
             url={post.url}
@@ -203,6 +203,11 @@ height: 100vh;
 #frontpage{
   background-position-x: 25%;
 }
+.project-container{
+    width: 100%;
+    margin: 0;
+  }
+
   }
 
 #title, #subtitle{
