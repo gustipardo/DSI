@@ -2,6 +2,13 @@
 import Card from '../components/Card.astro'
 import Layout from '../Layout/Layout.astro'
 
+import * as post1 from '../pages/projects/Panorama_Office_I_y_II.md';
+import * as post2 from '../pages/projects/Parque_Solar_Fotovoltaico.md';
+import * as post3 from '../pages/projects/Pavimentos.md';
+import * as post4 from '../pages/projects/Edificio_de_Oficinas_Polo_Oeste.md';
+import Project from '../components/Project.astro';
+const featuredPosts = [post1, post2, post3,post4]
+console.log(featuredPosts)
 ---
 <Layout title='DSI Constructora'>
     <section id="nosotros">
@@ -15,10 +22,25 @@ import Layout from '../Layout/Layout.astro'
     </div>
   
     </section>
-    <section id="servicios" class="h-full ">
-     
-        <div id="servicios-container" class="h-full bg-white text-black p-8 mx-2 border-b-4 border-black">
-            <h2 class="text-3xl font-bold">Nuestros Servicios</h2>
+    <section id="destacados">
+      <h2 class="text-black text-4xl font-semibold block p-10 text-center">Proyectos destacados:</h2>
+      <div class="flex flex-wrap justify-center mx-auto w-9/12">
+        {featuredPosts.map((post) => (
+          <Project
+            url={post.url}
+            title={post.frontmatter.title}
+            ubication={post.frontmatter.ubicacion}
+            image={post.frontmatter.imagenes[0]}
+            name={post.frontmatter.name}
+          />
+        ))}
+      </div>
+    </section>
+    
+    <section id="servicios" class="h-full pt-0">
+      
+        <div id="servicios-container" class="h-full bg-white text-black p-8 mx-2 border-b-4 border-black pt-0">
+            <h2 class="text-3xl font-bold text-black">Nuestros Servicios</h2>
             <p class="text-lg mt-4">Somos una empresa especializada en construcción e infraestructuras, con un equipo capacitado y maquinaria propia para garantizar resultados de calidad.<br> Especializados en:</p>
             <Card title="Obras de Medio Ambiente:" 
             image="../../assets/medio-ambiente.svg" 
@@ -164,6 +186,7 @@ height: 100vh;
 
 #servicios-container{
   padding: 100px;
+  padding-top: 0px;
 }
 
 @media screen and (max-width: 600px) {
@@ -191,5 +214,7 @@ height: 100vh;
 #subtitle{
   font-size: 26px;
 }
-
+body{
+  background-color: white;
+}
 </style>
