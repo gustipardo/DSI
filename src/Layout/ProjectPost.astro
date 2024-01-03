@@ -5,6 +5,7 @@ import '../styles/global.css'
 import MySwiper from '../components/MySwiper.jsx';
 import ProjectButton from '../components/ProjectButton.jsx';
 import TitleComponent from '../components/TitleComponent';
+import Swiper from '../components/Swiper.jsx'
 interface Props {
     title: string;
 }
@@ -43,8 +44,8 @@ console.log("Nombre:", name);
         </name>
         <left id="left" class="[grid-area:left] bg-white  flex flex-col justify-center self-center ">
             <div id="swiper-container" class=" overflow-hidden">
-            <MySwiper posts={allPosts} client:only/>
-
+            <!-- <MySwiper posts={allPosts} client:only/> -->
+            <Swiper posts={allPosts} client:only/>
             </div>
         </left>
             
