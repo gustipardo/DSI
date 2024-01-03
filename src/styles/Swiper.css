@@ -1,0 +1,10 @@
+.SwiperSlide{
+
+    height: 400px;
+}
+
+.SwiperSlide-img{
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}

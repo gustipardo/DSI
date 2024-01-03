@@ -2,6 +2,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
+import '../styles/Swiper.css'
 
 export default ({ posts }) => {
     const urlParts = window.location.href.split('/');
@@ -12,18 +13,18 @@ export default ({ posts }) => {
 
 
     console.log(imagesArray)
-    const imagesLength = imagesArray.length
+
   return (
     <Swiper
       spaceBetween={50}
       slidesPerView={1}
+      
       onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
-    >
+      onSwiper={(swiper) => console.log(swiper)}>
         
         {imagesArray.map((imagesArray, index) => (
-        <SwiperSlide key={index}>
-          <img src={`../../projects/${name}/${imagesArray}`} alt={`Imagen ${index + 1}`} />
+        <SwiperSlide key={index} className='SwiperSlide' id={`swiperSlide-${index}`}>
+          <img className='SwiperSlide-img' src={`../../projects/${name}/${imagesArray}`} alt={`Imagen ${index + 1}`} />
         </SwiperSlide>
       ))}
     </Swiper>
